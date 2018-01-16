@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Рябова](https://up.htmlacademy.ru/adaptive/13/user/242770).
-* Наставник: [Александр Кошара](https://up.htmlacademy.ru/adaptive/13/user/169035).
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
