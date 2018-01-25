@@ -6,142 +6,141 @@
     <base href="https://htmlacademy-adaptive.github.io/242770-pink/2/">
 </head>
 	<body>
-		  <header class="page-header">
-	  	<nav class="page-navigation">
-			<a class="main-logo page-header__logo" href="index.html">
-				<img class="page-header__logo-image" src="/source/img/logo.svg" width="100" height="100" alt="Пинк">
+	<header class="page-header">
+		<nav class="page-header__navigation page-navigation">
+			<a class="logo page-header__logo" href="index.html">
+				<img class="logo__image" src="/source/img/logo.svg" width="100" height="100" alt="Пинк">
 			</a>
-	  		<button class="page-navigation__toggle" type="button">Открыть/закрыть меню</button>
-	  		<div class="page-navigation__wrapper">
-		  		<ul class="page-navigation-list">
-		  			<li class="page-navigation-list__item">
-		  				<a href="index.html">Главная</a>
-		  			</li>
-		  			<li class="page-navigation-list__item page-navigation-list__item--active">
-		  				<a>Фотографии</a>
-		  			</li>
-		  			<li class="page-navigation-list__item">
-		  				<a href="form.html">Конкурс</a>
-		  			</li>
-		  			<li class="page-navigation-list__item">
-		  				<a href="https://htmlacademy.ru/">HTML Academy</a>
-		  			</li>
-		  		</ul>
-		  	</div>
-	  	</nav>
+			<button class="page-navigation__toggle" type="button">Открыть/закрыть меню</button>
+			<div class="page-navigation__wrapper">
+				<ul class="menu">
+					<li class="menu__item">
+						<a class="menu__link" href="index.html">Главная</a>
+					</li>
+					<li class="menu__item">
+						<span class="menu__link menu__link--current">Фотографии</span>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="form.html">Конкурс</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 	</header>
-	<main class="page-content">
-		<h1 class="visually-hidden">Фотографии в&nbsp;приложении Pink</h1>
-		<section class="page-content__page-info page-content__page-info--contest">
-			<h3>Фотографии пользователей</h3>
-		</section>
-		<div class="page-slogan">
-			<p class="page-slogan-text">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает ваших?</p>
+	<main class="main">
+		<h3 class="page-title">Фотографии пользователей</h3>
+		<div class="main-slogan">
+			<p class="main-slogan__text">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает ваших?</p>
 		</div>
-		<section class="photos photos-panorama">
-			<div class="photos__item photos__item--panorama-day">
-				<img class="photos__image" src="source/img/panorama.jpg" width="100" height="50">
-			</div>
-			<div class="photos__description">
-				<div class="photos__author">
-					<span>Анна</span>
-					<time class="photos__time">(5&nbsp;минут назад)</time>
-				</div>
-				<p class="photos__comment">Прыгать или нет? Напишите в&nbsp;коментарии свой совет и&nbsp;смотрите прямую транслацию в&nbsp;перископе, задавайте свои вопросы!</p>
-				<a class="photos__like">
-					Нравится: <span class="photos__like-count">215</span>
-				</a>
-			</div>
-		</section>
 		<section class="photos">
-			<div class="photos__item">
-				<img class="photos__image" src="source/img/car.jpg" width="100" height="50">
-			</div>
-			<div class="photos__description">
-				<div class="photos__author">
-					<span>Левон</span>
-					<time class="photos__time">(5&nbsp;часов назад)</time>
+			<section class="photo photo--panorama">
+				<div class="photo__item photo__item--panorama-day">
+					<img class="photo__image" src="source/img/panorama.jpg" width="100" height="50">
 				</div>
-				<p class="photos__comment">Вчера он&nbsp;на&nbsp;луну летал, сегодня в&nbsp;руки к&nbsp;нам попал.</p>
-				<a class="photos__like">
-					Нравится: <span class="photos__like-count">356</span>
-				</a>
-			</div>
-		</section>
-		<section class="photos">
-			<div class="photos__item">
-				<img class="photos__image" src="source/img/drums.jpg" width="100" height="50">
-			</div>
-			<div class="photos__description">
-				<div class="photos__author">
-					<span>Антон</span>
-					<time class="photos__time">(12&nbsp;часов назад)</time>
+				<div class="photo__description">
+					<div class="photo__author">
+						<span>Анна</span>
+						<time class="photo__time">(5&nbsp;минут назад)</time>
+					</div>
+					<p class="photo__comment">Прыгать или нет? Напишите в&nbsp;коментарии свой совет и&nbsp;смотрите прямую трансляцию в&nbsp;перископе, задавайте свои вопросы!</p>
+					<a class="photo__like">
+						Нравится: <span class="photo__like-count">215</span>
+					</a>
 				</div>
-				<p class="photos__comment">Соседи будут рады!</p>
-				<a class="photos__like">
-					Нравится: <span class="photos__like-count">666</span>
-				</a>
-			</div>
-		</section>
-		<section class="photos">
-			<div class="photos__item">
-				<img class="photos__image" src="source/img/window.jpg" width="100" height="50">
-			</div>
-			<div class="photos__description">
-				<div class="photos__author">
-					<span>Борис</span>
-					<time class="photos__time">(20&nbsp;часов назад)</time>
+			</section>
+			<section class="photo">
+				<div class="photo__item">
+					<img class="photo__image" src="source/img/car.jpg" width="100" height="50">
 				</div>
-				<p class="photos__comment">Здесь могла быть ваша цитата о&nbsp;высоком и&nbsp;вечном.</p>
-				<a class="photos__like">
-					Нравится: <span class="photos__like-count">215</span>
-				</a>
-			</div>
-		</section>
-		<section class="photos">
-			<div class="photos__item">
-				<img class="photos__image" src="source/img/bahcha.jpg" width="100" height="50">
-			</div>
-			<div class="photos__description">
-				<div class="photos__author">
-					<span>Сергей</span>
-					<time class="photos__time">(25&nbsp;часов назад)</time>
+				<div class="photo__description">
+					<div class="photo__author">
+						<span>Левон</span>
+						<time class="photos__time">(5&nbsp;часов назад)</time>
+					</div>
+					<p class="photo__comment">Вчера он&nbsp;на&nbsp;луну летал, сегодня в&nbsp;руки к&nbsp;нам попал.</p>
+					<a class="photo__like">
+						Нравится: <span class="photo__like-count">356</span>
+					</a>
 				</div>
-				<p class="photos__comment">Самая кубанская в&nbsp;мире!</p>
-				<a class="photos__like">
-					Нравится: <span class="photos__like-count">4</span>
-				</a>
-			</div>
-		</section>
-		<section class="photos">
-			<div class="photos__item">
-				<img class="photos__image" src="source/img/legs.jpg" width="100" height="50">
-			</div>
-			<div class="photos__description">
-				<div class="photos__author">
-					<span>Максим</span>
-					<time class="photos__time">(40&nbsp;часов назад)</time>
+			</section>
+			<section class="photo">
+				<div class="photo__item">
+					<img class="photo__image" src="source/img/drums.jpg" width="100" height="50">
 				</div>
-				<p class="photos__comment">Где снег-то?</p>
-				<a class="photos__like">
-					Нравится: <span class="photos__like-count">150</span>
-				</a>
-			</div>
-		</section>
-		<section class="photos">
-			<div class="photos__item">
-				<img class="photos__image" src="source/img/plane.jpg" width="100" height="50">
-			</div>
-			<div class="photos__description">
-				<div class="photos__author">
-					<span>Надежда</span>
-					<time class="photos__time">(45&nbsp;часов назад)</time>
+				<div class="photo__description">
+					<div class="photo__author">
+						<span>Антон</span>
+						<time class="photo__time">(12&nbsp;часов назад)</time>
+					</div>
+					<p class="photo__comment">Соседи будут рады!</p>
+					<a class="photo__like">
+						Нравится: <span class="photo__like-count">666</span>
+					</a>
 				</div>
-				<p class="photos__comment">Всем GM&nbsp;и&nbsp;взаимные лайки!</p>
-				<a class="photos__like">
-					Нравится: <span class="photos__like-count">2560</span>
-				</a>
-			</div>
+			</section>
+			<section class="photo">
+				<div class="photo__item">
+					<img class="photo__image" src="source/img/window.jpg" width="100" height="50">
+				</div>
+				<div class="photo__description">
+					<div class="photo__author">
+						<span>Борис</span>
+						<time class="photos__time">(20&nbsp;часов назад)</time>
+					</div>
+					<p class="photos__comment">Здесь могла быть ваша цитата о&nbsp;высоком и&nbsp;вечном.</p>
+					<a class="photos__like">
+						Нравится: <span class="photo__like-count">215</span>
+					</a>
+				</div>
+			</section>
+			<section class="photo">
+				<div class="photo__item">
+					<img class="photo__image" src="source/img/bahcha.jpg" width="100" height="50">
+				</div>
+				<div class="photo__description">
+					<div class="photo__author">
+						<span>Сергей</span>
+						<time class="photo__time">(25&nbsp;часов назад)</time>
+					</div>
+					<p class="photo__comment">Самая кубанская в&nbsp;мире!</p>
+					<a class="photo__like">
+						Нравится: <span class="photo__like-count">4</span>
+					</a>
+				</div>
+			</section>
+			<section class="photo">
+				<div class="photo__item">
+					<img class="photo__image" src="source/img/legs.jpg" width="100" height="50">
+				</div>
+				<div class="photo__description">
+					<div class="photo__author">
+						<span>Максим</span>
+						<time class="photo__time">(40&nbsp;часов назад)</time>
+					</div>
+					<p class="photo__comment">Где снег-то?</p>
+					<a class="photo__like">
+						Нравится: <span class="photo__like-count">150</span>
+					</a>
+				</div>
+			</section>
+			<section class="photo">
+				<div class="photo__item">
+					<img class="photo__image" src="source/img/plane.jpg" width="100" height="50">
+				</div>
+				<div class="photo__description">
+					<div class="photo__author">
+						<span>Надежда</span>
+						<time class="photo__time">(45&nbsp;часов назад)</time>
+					</div>
+					<p class="photo__comment">Всем GM&nbsp;и&nbsp;взаимные лайки!</p>
+					<a class="photo__like">
+						Нравится: <span class="photo__like-count">2560</span>
+					</a>
+				</div>
+			</section>
 		</section>
 		<div class="page-slogan">
 			Затмите их&nbsp;всех! Выкладывайте все, что накопилось в&nbsp;телефоне!
@@ -159,31 +158,31 @@
 				<div class="photo-editor__control-bar"></div>
 			</div>
 			<hr class="photo-editor__separation">
-			<button class="button photo-editor__button">Запостить</button>
-			<button class="button photo-editor__button photo-editor__button--disabled">Отмена</button>
+			<button class="button button--photo-edit">Запостить</button>
+			<button class="button button--photo-edit button--disabled">Отмена</button>
 		</section>
 	</main>
 	<footer class="page-footer">
-		<a class="main-logo page-footer__logo" href="index.html">
-			<img class="page-footer__logo-image" src="source/img/logo.svg" width="100" height="100" alt="Пинк">
+		<a class="logo page-footer__logo" href="index.html">
+			<img class="logo-image" src="source/img/logo.svg" width="100" height="100" alt="Пинк">
 		</a>
-		<section class="social-icons page-footer__social">
-			<a class="social-icons__item" href="#" alt="Twitter">
-				Twitter
-				<img src="source/img/twitter.svg" width="100" height="100" alt="Мы в твиттере">
+		<section class="social page-footer__social">
+			<a class="social__item" href="#" alt="Twitter">
+				<span class="social__text">Twitter</span>
+				<img class="social__icon" src="source/img/twitter.svg" width="100" height="100" alt="Мы в твиттере">
 			</a>
-			<a class="social-icons__item" href="#" alt="Facebook">
-				Facebook
-				<img src="source/img/facebook.svg" width="100" height="100" alt="Мы в фейсбуке">
+			<a class="social__item" href="#" alt="Facebook">
+				<span class="social__text">Facebook</span>
+				<img class="social__icon" src="source/img/facebook.svg" width="100" height="100" alt="Мы в фейсбуке">
 			</a>
-			<a class="social-icons__item" href="#" alt="Youtube">
-				Twitter
-				<img src="source/img/youtube.svg" width="100" height="100" alt="Наш канал на Youtobe">
+			<a class="social__item" href="#" alt="Youtube">
+				<span class="social__text">Youtube</span>
+				<img class="social__icon" src="source/img/youtube.svg" width="100" height="100" alt="Наш канал на Youtube">
 			</a>
 		</section>
-		<div class="page-footer__copywright">
-			<span class="page-footer__text">Разработано</span>
-			<a class="page-footer__link" href="https://htmlacademy.ru/">
+		<div class="page-footer__copyright copyright">
+			<span class="copyright__text">Разработано</span>
+			<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
 				<img src="source/img/academy.svg" width="100" height="100" alt="HTML Academy">
 			</a>
 		</div>
