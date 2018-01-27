@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Open Sans'), local('OpenSans'),
+  url('../fonts/opensans.woff2') format('woff2'),
+  url('../fonts/opensans.woff') format('woff');
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.page-header {
+	color: $white;
+	font-size: 18px;
+	background-color: $blue;
+}
+.logo {
+	&__image {
+		display: block;
+		width: 75px;
+		height: 22px;
+		margin: 20px 25px;
+	}
+}
+.menu {
+	list-style: none;
+	pagging: 0;
+	margin: 0;
+}
+.menu__link {
+	font-size: 18px;
+	font-family: 'OpenSans';
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
