@@ -1,0 +1,37 @@
+.table {
+	text-align: center;
+	color: $white;
+
+	&__title {
+	 	background-color: $blue;
+	 	font-size: 18px;
+	 	font-weight: bold;
+	 	line-height: calc(30/18);
+	}
+	&__cost {
+	 	background-color: $blue;
+	 	font-size: 24px;
+	 	font-weight: lighter;
+	 	line-height: calc(30/24);
+	}
+
+	&__field {
+		color: $blue;
+		font-size: 14px;
+		line-height: calc(30/14);
+		text-align: left;
+	}
+	
+	&__value {
+		padding: 16px 22px;
+		font-size: 0;
+		background-repeat: no-repeat;
+		background-image: url(../img/icon-yes.svg);
+		display: flex;
+		align-items: center;
+
+			&--disabled{ 
+				background-image: url(../img/icon-no.svg);
+			 }
+	}
+}

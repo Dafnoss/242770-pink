@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Приложение Пинк: фотографии</title>
+	<link href="css/style.css" rel="stylesheet">
   </head>
 	<body>
 	<header class="page-header">
 		<nav class="page-header__navigation page-navigation">
 			<a class="logo page-header__logo" href="index.html">
-				<img class="logo__image" src="/source/img/logo.svg" width="100" height="100" alt="Пинк">
+				<img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
 			</a>
-			<button class="page-navigation__toggle" type="button">Открыть/закрыть меню</button>
+			<button class="page-navigation__toggle" type="button">Меню</button>
 			<div class="page-navigation__wrapper">
 				<ul class="menu">
 					<li class="menu__item">
@@ -30,18 +31,20 @@
 		</nav>
 	</header>
 	<main class="main">
-		<h3 class="page-title">Фотографии пользователей</h3>
+		<div class="page-title">
+			<h3 class="page-title__text">Фотографии пользователей</h3>
+		</div>
 		<div class="main-slogan">
-			<p class="main-slogan__text">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает ваших?</p>
+			<p class="main-slogan__text">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! <br>Видите,&nbsp;как&nbsp;не&nbsp;хватает ваших?</p>
 		</div>
 		<section class="photos">
 			<section class="photo photo--panorama">
 				<div class="photo__item photo__item--panorama-day">
-					<img class="photo__image" src="source/img/panorama.jpg" width="100" height="50">
+					<img class="photo__image" src="img/panorama-mobile@1x.jpg" width="320" height="170">
 				</div>
 				<div class="photo__description">
 					<div class="photo__author">
-						<span>Анна</span>
+						Анна
 						<time class="photo__time">(5&nbsp;минут назад)</time>
 					</div>
 					<p class="photo__comment">Прыгать или нет? Напишите в&nbsp;коментарии свой совет и&nbsp;смотрите прямую трансляцию в&nbsp;перископе, задавайте свои вопросы!</p>
@@ -52,12 +55,12 @@
 			</section>
 			<section class="photo">
 				<div class="photo__item">
-					<img class="photo__image" src="source/img/car.jpg" width="100" height="50">
+					<img class="photo__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180">
 				</div>
 				<div class="photo__description">
 					<div class="photo__author">
-						<span>Левон</span>
-						<time class="photos__time">(5&nbsp;часов назад)</time>
+						Левон
+						<time class="photo__time">(5&nbsp;часов назад)</time>
 					</div>
 					<p class="photo__comment">Вчера он&nbsp;на&nbsp;луну летал, сегодня в&nbsp;руки к&nbsp;нам попал.</p>
 					<a class="photo__like">
@@ -67,11 +70,11 @@
 			</section>
 			<section class="photo">
 				<div class="photo__item">
-					<img class="photo__image" src="source/img/drums.jpg" width="100" height="50">
+					<img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180">
 				</div>
 				<div class="photo__description">
 					<div class="photo__author">
-						<span>Антон</span>
+						Антон
 						<time class="photo__time">(12&nbsp;часов назад)</time>
 					</div>
 					<p class="photo__comment">Соседи будут рады!</p>
@@ -82,26 +85,26 @@
 			</section>
 			<section class="photo">
 				<div class="photo__item">
-					<img class="photo__image" src="source/img/window.jpg" width="100" height="50">
+					<img class="photo__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180">
 				</div>
 				<div class="photo__description">
 					<div class="photo__author">
-						<span>Борис</span>
-						<time class="photos__time">(20&nbsp;часов назад)</time>
+						Борис
+						<time class="photo__time">(20&nbsp;часов назад)</time>
 					</div>
-					<p class="photos__comment">Здесь могла быть ваша цитата о&nbsp;высоком и&nbsp;вечном.</p>
-					<a class="photos__like">
+					<p class="photo__comment">Здесь могла быть ваша цитата о&nbsp;высоком и&nbsp;вечном.</p>
+					<a class="photo__like">
 						Нравится: <span class="photo__like-count">215</span>
 					</a>
 				</div>
 			</section>
 			<section class="photo">
 				<div class="photo__item">
-					<img class="photo__image" src="source/img/bahcha.jpg" width="100" height="50">
+					<img class="photo__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180">
 				</div>
 				<div class="photo__description">
 					<div class="photo__author">
-						<span>Сергей</span>
+						Сергей
 						<time class="photo__time">(25&nbsp;часов назад)</time>
 					</div>
 					<p class="photo__comment">Самая кубанская в&nbsp;мире!</p>
@@ -112,11 +115,11 @@
 			</section>
 			<section class="photo">
 				<div class="photo__item">
-					<img class="photo__image" src="source/img/legs.jpg" width="100" height="50">
+					<img class="photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="180">
 				</div>
 				<div class="photo__description">
 					<div class="photo__author">
-						<span>Максим</span>
+						Максим
 						<time class="photo__time">(40&nbsp;часов назад)</time>
 					</div>
 					<p class="photo__comment">Где снег-то?</p>
@@ -127,11 +130,11 @@
 			</section>
 			<section class="photo">
 				<div class="photo__item">
-					<img class="photo__image" src="source/img/plane.jpg" width="100" height="50">
+					<img class="photo__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180">
 				</div>
 				<div class="photo__description">
 					<div class="photo__author">
-						<span>Надежда</span>
+						Надежда
 						<time class="photo__time">(45&nbsp;часов назад)</time>
 					</div>
 					<p class="photo__comment">Всем GM&nbsp;и&nbsp;взаимные лайки!</p>
@@ -141,52 +144,57 @@
 				</div>
 			</section>
 		</section>
-		<div class="page-slogan">
-			Затмите их&nbsp;всех! Выкладывайте все, что накопилось в&nbsp;телефоне!
+		<div class="main-slogan">
+			<p class="main-slogan__text">Затмите их&nbsp;всех! <br>Выкладывайте все, что накопилось в&nbsp;телефоне!</p>
 		</div>
 		<section class="photo-editor">
 			<div class="photo-editor__photo-add">
 				<div class="photo-editor__picture">
-					<img scr="source/img/winter.jpg" width="100" height="50">
+					<img src="img/photo-road-mobile@1x.jpg" width="280" height="375">
 				</div>
 			</div>
 			<div class="photo-editor__controls">
-				<button class="photo-editor__control-button photo-editor__control-button--active">Кадрировать</button>
-				<button class="photo-editor__control-button">Выполнить заливку</button>
-				<button class="photo-editor__control-button">Применить фильтр</button>
+				<button class="photo-editor__control-button photo-editor__control-button--active">
+					Кадрировать
+					<img src="img/icon-editor-crop.svg" width="45" height="45" alt="Кадрировать фотографию">
+				</button>
+				<button class="photo-editor__control-button">
+					Выполнить заливку
+					<img src="img/icon-editor-fill.svg" width="45" height="45" alt="Выполнить заливку фотографии">
+				</button>
+				<button class="photo-editor__control-button">
+					Применить фильтр
+					<img src="img/icon-editor-contrast.svg" width="45" height="45" alt="Выполнить заливку фотографии">
+				</button>
 				<div class="photo-editor__control-bar"></div>
 			</div>
-<<<<<<< HEAD
-			<hr class="photo-editor__separation">
-=======
 			<hr class="photo-editor__separator">
->>>>>>> cacba41c7dd37ad915ae27fd469c020bad9dcaac
 			<button class="button button--photo-edit">Запостить</button>
 			<button class="button button--photo-edit button--disabled">Отмена</button>
 		</section>
 	</main>
 	<footer class="page-footer">
 		<a class="logo page-footer__logo" href="index.html">
-			<img class="logo-image" src="source/img/logo.svg" width="100" height="100" alt="Пинк">
+			<img class="logo__image" src="img/logo-pink-blue-mobile.svg" width="149" height="40" alt="Пинк">
 		</a>
 		<section class="social page-footer__social">
 			<a class="social__item" href="#" alt="Twitter">
 				<span class="social__text">Twitter</span>
-				<img class="social__icon" src="source/img/twitter.svg" width="100" height="100" alt="Мы в твиттере">
+				<img class="social__icon" src="img/icon-twitter.svg" width="45" height="45" alt="Мы в твиттере">
 			</a>
 			<a class="social__item" href="#" alt="Facebook">
 				<span class="social__text">Facebook</span>
-				<img class="social__icon" src="source/img/facebook.svg" width="100" height="100" alt="Мы в фейсбуке">
+				<img class="social__icon" src="img/icon-facebook.svg" width="45" height="45" alt="Мы в фейсбуке">
 			</a>
 			<a class="social__item" href="#" alt="Youtube">
 				<span class="social__text">Youtube</span>
-				<img class="social__icon" src="source/img/youtube.svg" width="100" height="100" alt="Наш канал на Youtube">
+				<img class="social__icon" src="img/icon-youtube.svg" width="45" height="45" alt="Наш канал на Youtube">
 			</a>
 		</section>
 		<div class="page-footer__copyright copyright">
 			<span class="copyright__text">Разработано</span>
 			<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-				<img src="source/img/academy.svg" width="100" height="100" alt="HTML Academy">
+				<img src="img/htmlacademy.svg" width="45" height="45" alt="HTML Academy">
 			</a>
 		</div>
 	</footer>

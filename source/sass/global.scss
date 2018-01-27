@@ -1,0 +1,38 @@
+body {
+	margin: 0;
+	padding: 0;
+  font-family: $base-font;
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Open Sans'), local('OpenSans'),
+  url('../fonts/opensans.woff2') format('woff2'),
+  url('../fonts/opensans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: lighter;
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+  url('../fonts/opensanslight.woff2') format('woff2'),
+  url('../fonts/opensanslight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+  url('../fonts/opensansbold.woff2') format('woff2'),
+  url('../fonts/opensansbold.woff') format('woff');
+}
+.visually-hidden {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
