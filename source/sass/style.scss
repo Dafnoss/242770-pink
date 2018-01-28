@@ -1,5 +1,7 @@
 @import "var","global";
+
 @import "blocks/page-header";
+@import "blocks/download-icons";
 @import "blocks/logo";
 @import "blocks/menu";
 @import "blocks/page-title";
@@ -13,5 +15,10 @@
 @import "blocks/contacts";
 @import "blocks/photo";
 @import "blocks/photo-editor";
+@import "blocks/contest-form";
+@import "blocks/input";
+@import "blocks/checkbox";
+@import "blocks/radio";
+@import "blocks/textarea";
 @import "blocks/page-footer";
-@import "blocks/social";
+@import "blocks/social"

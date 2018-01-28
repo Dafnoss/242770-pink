@@ -1,8 +1,7 @@
 .main-slogan {
 	padding-top: 55px;
-
-	&__text {
-	color: $blue;
+}
+.main-slogan__text {
+	color: $baseBlue;
 	text-align: center;
-	}
 }

@@ -1,0 +1,18 @@
+.textarea__text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: $baseBlue;
+  padding: 20px 20px;
+  min-width: 50px;
+  min-height: 130px;
+  margin-top: 19px;
+  border: 2px solid #e5e5e5;
+}
+.textarea__label {
+  font-size: 14px;
+  color: $basePink;
+  line-height: 1.7;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}

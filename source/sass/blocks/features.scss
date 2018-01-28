@@ -1,24 +1,24 @@
 .features {
 	font-family: $base-font;
 	text-align: center;
-		&__text {
-			display: block;
-			font-size: 24px;
-			color: $blue;
-			margin-top: 42px;
-		}
+}
+.features__text {
+	display: block;
+	font-size: 24px;
+	color: $baseBlue;
+	margin-top: 42px;
 }
 .features-list {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	background-color: $grey;
-		&__title {
-			font-size: 18px;
-			color: #000000;
-		}
-		&__info {
-			font-size: 14px;
-			color: $blue;
-		}
+	background-color: $baseGrey;
+}
+.features-list__title {
+	font-size: 18px;
+	color: $baseBlack;
+}
+.features-list__info {
+	font-size: 14px;
+	color: $baseBlue;
 }

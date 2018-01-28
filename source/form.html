@@ -21,7 +21,7 @@
 						<a class="menu__link" href="photo.html">Фотографии</a>
 					</li>
 					<li class="menu__item">
-						<span class="menu__link menu__link--current" href="form.html">Конкурс</span>
+						<span class="menu__link menu__link--current">Конкурс</span>
 					</li>
 					<li class="menu__item">
 						<a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
@@ -33,7 +33,7 @@
 	<main class="main">
 		<h1 class="visually-hidden">Конкурс в&nbsp;приложении Pink</h1>
 		<div class="page-title">
-			<h3 class="page-title__text">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк</h3>
+			<h3 class="page-title__text">Конкурс на&nbsp;самое безбашенное <br>путешествие с&nbsp;Пинк</h3>
 		</div>
 		<div class="main-slogan">
 			<p class="main-slogan__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту!</p>
@@ -97,22 +97,22 @@
 					<span class="contest-form__subtitle-inner">С&nbsp;каким приложением путешествовали?</span>
 				</div>
 				<label class="radio contest-form__radio">
-					<span class="radio__label">Pink для iOS</span>
 					<input class="radio__control" type="radio" name="apps-ios" id="apps-ios" checked>
+					<span class="radio__label">Pink для iOS</span>
 				</label>
 				<label class="radio contest-form__radio">
+					<input class="radio__control" type="radio" name="apps-android" id="apps-android">
 					<span class="radio__label">Pink на&nbsp;Android</span>
-					<input class="radio__control" type="radio" name="apps-android" id="apps-android" checked>
 				</label>
 				<label class="radio contest-form__radio">
+					<input class="radio__control" type="radio" name="apps-windows" id="apps-windows">
 					<span class="radio__label">Windows Phone</span>
-					<input class="radio__control" type="radio" name="apps-windows" id="apps-windows" checked>
 				</label>
 			</section>
 			<section class="contest-form__item contest-form__item--review">
 				<label class="textarea contest-form__textarea">
 					<span class="textarea__label">Опишите свои эмоции</span>
-					<textarea name="emotions" placeholder="Можно прям в&nbsp;красках, не&nbsp;стесняясь в&nbsp;выражениях"></textarea>
+					<textarea class="textarea__text" name="emotions" placeholder="Можно прям в&nbsp;красках, не&nbsp;стесняясь в&nbsp;выражениях"></textarea>
 				</label>
 			</section>
 			<footer class="contest-form__footer">
@@ -126,18 +126,9 @@
 			<img class="logo__image" src="img/logo-pink-blue-mobile.svg" width="149" height="40" alt="Пинк">
 		</a>
 		<section class="social page-footer__social">
-			<a class="social__item" href="#" alt="Twitter">
-				<span class="social__text">Twitter</span>
-				<img class="social__icon" src="img/icon-twitter.svg" width="45" height="45" alt="Мы в твиттере">
-			</a>
-			<a class="social__item" href="#" alt="Facebook">
-				<span class="social__text">Facebook</span>
-				<img class="social__icon" src="img/icon-facebook.svg" width="45" height="45" alt="Мы в фейсбуке">
-			</a>
-			<a class="social__item" href="#" alt="Youtube">
-				<span class="social__text">Youtube</span>
-				<img class="social__icon" src="img/icon-youtube.svg" width="45" height="45" alt="Наш канал на Youtube">
-			</a>
+			<a class="social__item social__item--twitter" href="#" alt="Twitter">Twitter</a>
+			<a class="social__item social__item--facebook" href="#" alt="Facebook">Facebook</a>
+			<a class="social__item social__item--youtube" href="#" alt="Youtube">Youtube</a>
 		</section>
 		<div class="page-footer__copyright copyright">
 			<span class="copyright__text">Разработано</span>

@@ -1,5 +1,3 @@
-@import "var";
-
 .button {
 	display: inline-block;
 	padding: 5px 40px;
@@ -11,66 +9,51 @@
 	text-align: center;
 	text-decoration: none;
 	font-family: $base-font;
-		&--download {
-			color: $white;
-			border: 3px solid $white;
-			margin-top: 28px;
-			margin-bottom: 32px;
-		}
+	&--download {
+		color: $baseWhite;
+		border: 3px solid $baseWhite;
+		margin-top: 28px;
+		margin-bottom: 32px;
+	}
+	&:hover,
+	&:focus {
+		background-color: $baseWhite;
+		color: $basePink;
+	}
+	&:active {
+		background-color: $baseWhite;
+		color: $basePink--lighter;
+	}
+	&--photo-edit {
+		min-width: 280px;
+		color: $basePink;
+		border: 3px solid $basePink;
+		margin-bottom: 12px;
 		&:hover,
 		&:focus {
-			background-color: $white;
-			color: $pink;
+			background-color: $basePink;
+			color: $baseWhite;
 		}
 		&:active {
-			background-color: $white;
-			color: $pink-lighter;
+			background-color: $basePink;
+			color: $basePink--lighter;
 		}
-		&--photo-edit {
-			min-width: 280px;
-			color: $pink;
-			border: 3px solid $pink;
-			margin-bottom: 12px;
-				&:hover,
-				&:focus {
-					background-color: $pink;
-					color: $white;
-				}
-				&:active {
-					background-color: $pink;
-					color: $pink-lighter;
-				}
-		}
-		&--disabled {
-			min-width: 280px;
-			color: rgba($blue, 0.1);
-			border: 3px solid rgba($blue, 0.1);
-			margin-bottom: 12px;
-				&:hover,
-				&:focus {
-					border: 3px solid rgba($blue, 0.3);
-					color: rgba($blue, 0.3);
-					background-color: transparent;
-				}
-				&:active {
-					color: rgba($white, 0.3);
-					border: 3px solid rgba($blue, 0.3);
-					background-color: rgba($blue, 0.3);
-				}
-		}
-}
-.photo-editor__control-button {
-	font-size: 0;
-	border-radius: 0;
-	background-color: transparent;
-	width: 44px;
-	height: 44px;
-	border: none;
+	}
+	&--disabled {
+		min-width: 280px;
+		color: rgba($baseBlue, 0.1);
+		border: 3px solid rgba($baseBlue, 0.1);
+		margin-bottom: 12px;
 		&:hover,
 		&:focus {
-			color: $pink;
+			border: 3px solid rgba($baseBlue, 0.3);
+			color: rgba($baseBlue, 0.3);
+			background-color: transparent;
 		}
 		&:active {
-			color: $pink-lighter;
+			color: rgba($baseWhite, 0.3);
+			border: 3px solid rgba($baseBlue, 0.3);
+			background-color: rgba($baseBlue, 0.3);
 		}
+	}
 }

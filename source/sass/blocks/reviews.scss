@@ -3,19 +3,16 @@
 	padding-top: 50px;
 	text-align: center;
 	font-family: $base-font;
-
-	&__author {
-		font-size: 18px;
-		font-style: normal;
-		line-height: calc(18/30);
-		color: #000000;
-	}
-
-	&__text {
-		font-size: 14px;
-		font-style: normal;
-		line-height: calc(30/14);
-		color: $blue;
-	}
-
+}
+.reviews__author {
+	font-size: 18px;
+	font-style: normal;
+	line-height: 1.7;
+	color: $baseBlack;
+}
+.reviews__text {
+	font-size: 14px;
+	font-style: normal;
+	line-height: 1.7;
+	color: $baseBlue;
 }

@@ -1,0 +1,40 @@
+.contest-form__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	&--achievements {
+	background-color: $baseGrey;
+	padding-bottom: 20px;
+	margin-top: 30px;
+	}
+	&--review {
+		margin-top: 50px;
+	}
+}
+.contest-form__subtitle {
+	padding-top: 40px;
+}
+.contest-form__subtitle-inner {
+	text-transform: uppercase;
+	color: $basePink;
+	font-size: 14px;
+	line-height: 1.2;
+}
+.contest-form__footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+.contest-form__note-accent {
+	font-size: 14px;
+	color: $basePink;
+	line-height: 1.7;
+}
+.contest-form__note {
+	font-size: 14px;
+	color: $baseBlue;
+	line-height: 1.7;
+	text-transform: uppercase;
+}

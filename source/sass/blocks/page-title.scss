@@ -1,21 +1,21 @@
-@import "var","global";
-
 .page-title {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: $blue-dark url(../img/bg-back-mobile@1x.jpg) center top no-repeat;
+	background: $baseBlue--dark url("../img/bg-back-mobile@1x.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
 	width: 100%;
 	min-height: 170px;
 	padding: 0;
 	margin: 0;
 	text-align: center;
-
-	&__text {
-		padding: 0;
-		margin: 0;
-		color: $white;
-		font-size: 24px;
-		font-weight: lighter;
-	}
+}
+.page-title__text {
+	padding: 0;
+	margin: 0;
+	color: $baseWhite;
+	font-size: 24px;
+	font-weight: lighter;
+	line-height: 1.7;
 }

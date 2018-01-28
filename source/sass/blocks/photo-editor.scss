@@ -4,19 +4,33 @@
 	justify-content: space-around;
 	align-items: center;
 	margin-top: 50px;
-	background-color: $grey;
-
-	&__photo-add {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	background-color: $baseGrey;
+}
+.photo-editor__photo-add {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.photo-editor__picture {
+	padding-top: 20px;
+}
+.photo-editor__controls {
+	padding: 0;
+	margin: 0;
+	margin-top: 40px;
+}
+.photo-editor__control-button {
+	font-size: 0;
+	border-radius: 0;
+	background-color: transparent;
+	width: 44px;
+	height: 44px;
+	border: none;
+	&:hover,
+	&:focus {
+		color: $basePink;
 	}
-	&__picture {
-		padding-top: 20px;
-	}
-	&__controls {
-		padding: 0;
-		margin: 0;
-		margin-top: 40px;
+	&:active {
+		color: $basePink--lighter;
 	}
 }
