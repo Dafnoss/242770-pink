@@ -1,0 +1,28 @@
+.checkbox {
+  margin-top: 50px;
+}
+
+.checkbox__control {
+  display: none;
+}
+
+.checkbox__label {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 18px;
+  color: $blue;
+  line-height: 30px;
+  position: relative;
+  padding-left: 70px;
+}
+
+.checkbox__label::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: $white;
+  border: 2px solid #e5e5e5;
+}

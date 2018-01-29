@@ -1,0 +1,38 @@
+.table {
+  text-align: center;
+  color: $white;
+}
+
+.table__title {
+  background-color: $blue;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.table__cost {
+  background-color: $blue;
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 30px;
+}
+
+.table__field {
+  color: $blue;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.table__value {
+  padding: 16px 22px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-yes.svg");
+  display: flex;
+  align-items: center;
+
+  &--disabled {
+    background-image: url("../img/icon-no.svg");
+  }
+}

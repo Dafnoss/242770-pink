@@ -1,0 +1,41 @@
+.photo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.photo__author {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $blue;
+}
+
+.photo__time {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: lighter;
+}
+
+.photo__comment {
+  text-align: left;
+  color: $blue;
+  font-weight: normal;
+}
+
+.photo__like {
+  padding-left: 50px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/icon-heart.svg");
+    background-size: cover;
+  }
+}

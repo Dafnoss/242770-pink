@@ -1,0 +1,21 @@
+.download-icons__item {
+  display: block;
+  margin: 0 16px;
+  width: 48px;
+  height: 56px;
+  background: center no-repeat;
+  border: none;
+  font-size: 0;
+}
+
+.download-icons__item--ios {
+  background-image: url("../img/logo-apple.svg");
+}
+
+.download-icons__item--android {
+  background-image: url("../img/logo-android.svg");
+}
+
+.download-icons__item--windows {
+  background-image: url("../img/logo-microsoft.svg");
+}

@@ -1,0 +1,16 @@
+.features-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: $grey;
+}
+
+.features-list__title {
+  font-size: 18px;
+  color: $black;
+}
+
+.features-list__info {
+  font-size: 14px;
+  color: $blue;
+}

@@ -1,0 +1,37 @@
+.contacts {
+  padding-top: 50px;
+}
+
+.contacts__title {
+  color: $blue;
+  text-align: center;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.contacts__subtitle {
+  color: $blue;
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.contacts__link {
+  color: $pink;
+  text-align: center;
+  font-weight: normal;
+  font-size: 24px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+    padding-bottom: 2px;
+    border-bottom: 1px solid $blue;
+  }
+
+  &:active {
+    color: rgba($blue, 0.3);
+    border-bottom: none;
+  }
+}
