@@ -34,7 +34,7 @@
   opacity: 0;
 }
 
-.radio__control::checked + .radio__label::after {
+.radio__control:checked + .radio__label::after {
   opacity: 1;
 }
 
