@@ -27,7 +27,7 @@
     background-image: url("../img/icon-yes.svg");
     display: flex;
     align-items: center;
-    &--disabled { 
+    &--disabled {
         background-image: url("../img/icon-no.svg");
     }
 }
