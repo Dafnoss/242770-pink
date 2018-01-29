@@ -38,13 +38,13 @@
     &:focus {
       background-color: $pink;
       color: $white;
-  }
+    }
 
-  &:active {
-    background-color: $pink;
-    color: $pink--lighter;
+    &:active {
+      background-color: $pink;
+      color: $pink--lighter;
+    }
   }
-}
 
   &--submit {
     color: $white;
@@ -56,18 +56,18 @@
     &:focus {
       background-color: #1c9b5e;
       color: $white;
-  }
+    }
 
-  &:disabled {
-    background-color: #e5e5e5;
-    color: $white;
-  }
+    &:disabled {
+      background-color: #e5e5e5;
+      color: $white;
+    }
 
   &:active {
-    color: rgba($white, 0.3);
-    background-color: #1c9b5e;
+      color: rgba($white, 0.3);
+      background-color: #1c9b5e;
+    }
   }
-}
 
   &--disabled {
     min-width: 280px;
@@ -75,17 +75,17 @@
     border: 3px solid rgba($blue, 0.1);
     margin-bottom: 12px;
 
-  &:hover,
-  &:focus {
-    border: 3px solid rgba($blue, 0.3);
-    color: rgba($blue, 0.3);
-    background-color: transparent;
-  }
+    &:hover,
+    &:focus {
+      border: 3px solid rgba($blue, 0.3);
+      color: rgba($blue, 0.3);
+      background-color: transparent;
+    }
 
-  &:active {
-    color: rgba($white, 0.3);
-    border: 3px solid rgba($blue, 0.3);
-    background-color: rgba($blue, 0.3);
+    &:active {
+      color: rgba($white, 0.3);
+      border: 3px solid rgba($blue, 0.3);
+      background-color: rgba($blue, 0.3);
     }
   }
 }

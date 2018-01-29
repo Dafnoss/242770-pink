@@ -16,7 +16,7 @@
   padding-left: 70px;
 }
 
-.checkbox__label:before {
+.checkbox__label::before {
   content: "";
   position: absolute;
   top: -6px;
