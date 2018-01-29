@@ -1,78 +1,91 @@
 .button {
-    display: inline-block;
-    padding: 5px 40px;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    background-color: transparent;
-    border-radius: 27px;
-    text-align: center;
-    text-decoration: none;
-    font-family: $base-font;
-    &--download {
-        color: $white;
-        border: 3px solid $white;
-        margin-top: 28px;
-        margin-bottom: 32px;
-    }
+  display: inline-block;
+  padding: 5px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  border-radius: 27px;
+  text-align: center;
+  text-decoration: none;
+  font-family: $base-font;
+
+  &--download {
+    color: $white;
+    border: 3px solid $white;
+    margin-top: 28px;
+    margin-bottom: 32px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $pink;
+  }
+
+  &:active {
+    background-color: $white;
+    color: $pink--lighter;
+  }
+
+  &--photo-edit {
+    min-width: 280px;
+    color: $pink;
+    border: 3px solid $pink;
+    margin-bottom: 12px;
+
     &:hover,
     &:focus {
-        background-color: $white;
-        color: $pink;
+      background-color: $pink;
+      color: $white;
+  }
+
+  &:active {
+    background-color: $pink;
+    color: $pink--lighter;
+  }
+}
+
+  &--submit {
+    color: $white;
+    border-radius: 3px;
+    background-color: #2aab6d;
+    padding: 20px 20px;
+
+    &:hover,
+    &:focus {
+      background-color: #1c9b5e;
+      color: $white;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: $white;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: #1c9b5e;
+  }
+}
+
+  &--disabled {
+    min-width: 280px;
+    color: rgba($blue, 0.1);
+    border: 3px solid rgba($blue, 0.1);
+    margin-bottom: 12px;
+
+  &:hover,
+  &:focus {
+    border: 3px solid rgba($blue, 0.3);
+    color: rgba($blue, 0.3);
+    background-color: transparent;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    border: 3px solid rgba($blue, 0.3);
+    background-color: rgba($blue, 0.3);
     }
-    &:active {
-        background-color: $white;
-        color: $pink--lighter;
-    }
-    &--photo-edit {
-        min-width: 280px;
-        color: $pink;
-        border: 3px solid $pink;
-        margin-bottom: 12px;
-        &:hover,
-        &:focus {
-            background-color: $pink;
-            color: $white;
-        }
-        &:active {
-            background-color: $pink;
-            color: $pink--lighter;
-        }
-    }
-    &--submit {
-        color: $white;
-        border-radius: 3px;
-        background-color: #2aab6d;
-        padding: 20px 20px;
-        &:hover,
-        &:focus {
-            background-color: #1c9b5e;
-            color: $white;
-        }
-        &:disabled {
-            background-color: #e5e5e5;
-            color: $white;
-        }
-        &:active {
-            color: rgba($white, 0.3);
-            background-color: #1c9b5e;
-        }
-    }
-    &--disabled {
-        min-width: 280px;
-        color: rgba($blue, 0.1);
-        border: 3px solid rgba($blue, 0.1);
-        margin-bottom: 12px;
-        &:hover,
-        &:focus {
-            border: 3px solid rgba($blue, 0.3);
-            color: rgba($blue, 0.3);
-            background-color: transparent;
-        }
-        &:active {
-            color: rgba($white, 0.3);
-            border: 3px solid rgba($blue, 0.3);
-            background-color: rgba($blue, 0.3);
-        }
-    }
+  }
 }

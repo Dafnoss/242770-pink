@@ -1,27 +1,31 @@
 .menu {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
+
 .menu__item {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
+
 .menu__link {
-    font-size: 18px;
-    font-family: $base-font;
-    color: $white;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 32px;
-    &:hover,
-    &:focus {
-        color: $pink;
-    }
-    &:active {
-        color: rgba($pink, 0.3);
-    }
+  font-size: 18px;
+  font-family: $base-font;
+  color: $white;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 32px;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3);
+  }
 }
