@@ -80,7 +80,8 @@ body {
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 32px; }
   .menu__link:hover, .menu__link:focus {
     color: #d22856; }
   .menu__link:active {
@@ -111,7 +112,7 @@ body {
   color: #ffffff;
   font-size: 24px;
   font-weight: lighter;
-  line-height: 1.7; }
+  line-height: 30px; }
 
 .main-slogan {
   padding-top: 55px; }
@@ -130,7 +131,7 @@ body {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: lighter;
   color: #ffffff;
-  line-height: 1.7;
+  line-height: 24px;
   padding-top: 28px;
   padding-bottom: 35px; }
 
@@ -167,6 +168,20 @@ body {
     .button--photo-edit:active {
       background-color: #d22856;
       color: #f2ced5; }
+  .button--submit {
+    color: #ffffff;
+    border-radius: 3px;
+    background-color: #2aab6d;
+    padding: 20px 20px; }
+    .button--submit:hover, .button--submit:focus {
+      background-color: #1c9b5e;
+      color: #ffffff; }
+    .button--submit:disabled {
+      background-color: #e5e5e5;
+      color: #ffffff; }
+    .button--submit:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #1c9b5e; }
   .button--disabled {
     min-width: 280px;
     color: rgba(40, 54, 69, 0.1);
@@ -182,7 +197,6 @@ body {
       background-color: rgba(40, 54, 69, 0.3); }
 
 .features {
-  font-family: "OpenSans", "Arial", sans-serif;
   text-align: center; }
 
 .features__text {
@@ -216,13 +230,13 @@ body {
 .reviews__author {
   font-size: 18px;
   font-style: normal;
-  line-height: 1.7;
+  line-height: 30px;
   color: #000000; }
 
 .reviews__text {
   font-size: 14px;
   font-style: normal;
-  line-height: 1.7;
+  line-height: 30px;
   color: #283645; }
 
 .rates {
@@ -236,18 +250,18 @@ body {
   background-color: #283645;
   font-size: 18px;
   font-weight: bold;
-  line-height: 1.7; }
+  line-height: 30px; }
 
 .table__cost {
   background-color: #283645;
   font-size: 24px;
   font-weight: lighter;
-  line-height: 1.2; }
+  line-height: 30px; }
 
 .table__field {
   color: #283645;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 30px;
   text-align: left; }
 
 .table__value {
@@ -308,13 +322,13 @@ body {
 
 .photo__author {
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 24px;
   font-weight: bold;
   color: #283645; }
 
 .photo__time {
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 24px;
   font-weight: lighter; }
 
 .photo__comment {
@@ -411,7 +425,7 @@ body {
   text-transform: uppercase;
   color: #d22856;
   font-size: 14px;
-  line-height: 1.2; }
+  line-height: 18px; }
 
 .contest-form__footer {
   display: -webkit-box;
@@ -429,12 +443,12 @@ body {
 .contest-form__note-accent {
   font-size: 14px;
   color: #d22856;
-  line-height: 1.7; }
+  line-height: 30px; }
 
 .contest-form__note {
   font-size: 14px;
   color: #283645;
-  line-height: 1.7;
+  line-height: 30px;
   text-transform: uppercase; }
 
 .input__label {
@@ -459,7 +473,7 @@ body {
   vertical-align: baseline;
   font-size: 18px;
   color: #283645;
-  line-height: 1.7;
+  line-height: 30px;
   position: relative;
   padding-left: 70px; }
 
@@ -516,7 +530,7 @@ body {
 
 .textarea__text {
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 30px;
   color: #283645;
   padding: 20px 20px;
   min-width: 50px;
@@ -527,7 +541,7 @@ body {
 .textarea__label {
   font-size: 14px;
   color: #d22856;
-  line-height: 1.7;
+  line-height: 30px;
   text-transform: uppercase;
   display: block;
   text-align: center; }
