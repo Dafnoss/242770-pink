@@ -17,7 +17,7 @@
 	height: 37px;
 	border: 2px solid #e5e5e5;
 	border-radius: 50%;
-	background: $baseWhite;
+	background: $white;
 }
 .radio__label:after {
 	content: "";
@@ -27,7 +27,7 @@
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
-	background: $basePink;
+	background: $pink;
 	opacity: 0;
 }
 .radio__control:checked + .radio__label:after {

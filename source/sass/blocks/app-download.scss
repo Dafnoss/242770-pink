@@ -1,5 +1,5 @@
 .app-download {
-	background-color: $baseBlue--dark;
+	background-color: $blue--dark;
 	text-align: center;
 }
 .app-download__text {
@@ -7,8 +7,8 @@
 	padding: 0;
 	font-family: $base-font;
 	font-weight: lighter;
-	color: $baseWhite;
-	line-height: 1.7;
+	color: $white;
+	line-height: 24px;
 	padding-top: 28px;
 	padding-bottom: 35px;
 }

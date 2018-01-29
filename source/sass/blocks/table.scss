@@ -1,23 +1,23 @@
 .table {
 	text-align: center;
-	color: $baseWhite;
+	color: $white;
 }
 .table__title {
-	background-color: $baseBlue;
+	background-color: $blue;
 	font-size: 18px;
 	font-weight: bold;
-	line-height: 1.7;
+	line-height: 30px;
 }
 .table__cost {
-	background-color: $baseBlue;
+	background-color: $blue;
 	font-size: 24px;
 	font-weight: lighter;
-	line-height: 1.2;
+	line-height: 30px;
 }
 .table__field {
-	color: $baseBlue;
+	color: $blue;
 	font-size: 14px;
-	line-height: 1.7;
+	line-height: 30px;
 	text-align: left;
 }
 .table__value {

@@ -10,50 +10,69 @@
 	text-decoration: none;
 	font-family: $base-font;
 	&--download {
-		color: $baseWhite;
-		border: 3px solid $baseWhite;
+		color: $white;
+		border: 3px solid $white;
 		margin-top: 28px;
 		margin-bottom: 32px;
 	}
 	&:hover,
 	&:focus {
-		background-color: $baseWhite;
-		color: $basePink;
+		background-color: $white;
+		color: $pink;
 	}
 	&:active {
-		background-color: $baseWhite;
-		color: $basePink--lighter;
+		background-color: $white;
+		color: $pink--lighter;
 	}
 	&--photo-edit {
 		min-width: 280px;
-		color: $basePink;
-		border: 3px solid $basePink;
+		color: $pink;
+		border: 3px solid $pink;
 		margin-bottom: 12px;
 		&:hover,
 		&:focus {
-			background-color: $basePink;
-			color: $baseWhite;
+			background-color: $pink;
+			color: $white;
 		}
 		&:active {
-			background-color: $basePink;
-			color: $basePink--lighter;
+			background-color: $pink;
+			color: $pink--lighter;
+		}
+	}
+	&--submit {
+		color: $white;
+		border-radius: 3px;
+		background-color: #2aab6d;
+		padding: 20px 20px;
+		&:hover,
+		&:focus {
+			background-color: #1c9b5e;
+			color: $white;
+		}
+		&:disabled {
+			background-color: #e5e5e5;
+			color: $white;
+		}
+		&:active {
+			color: rgba($white, 0.3);
+			background-color: #1c9b5e;
 		}
 	}
 	&--disabled {
 		min-width: 280px;
-		color: rgba($baseBlue, 0.1);
-		border: 3px solid rgba($baseBlue, 0.1);
+		color: rgba($blue, 0.1);
+		border: 3px solid rgba($blue, 0.1);
 		margin-bottom: 12px;
 		&:hover,
 		&:focus {
-			border: 3px solid rgba($baseBlue, 0.3);
-			color: rgba($baseBlue, 0.3);
+			border: 3px solid rgba($blue, 0.3);
+			color: rgba($blue, 0.3);
 			background-color: transparent;
 		}
 		&:active {
-			color: rgba($baseWhite, 0.3);
-			border: 3px solid rgba($baseBlue, 0.3);
-			background-color: rgba($baseBlue, 0.3);
+			color: rgba($white, 0.3);
+			border: 3px solid rgba($blue, 0.3);
+			background-color: rgba($blue, 0.3);
 		}
 	}
 }

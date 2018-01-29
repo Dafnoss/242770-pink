@@ -1,7 +1,7 @@
 .textarea__text {
   font-size: 18px;
-  line-height: 1.7;
-  color: $baseBlue;
+  line-height: 30px;
+  color: $blue;
   padding: 20px 20px;
   min-width: 50px;
   min-height: 130px;
@@ -10,8 +10,8 @@
 }
 .textarea__label {
   font-size: 14px;
-  color: $basePink;
-  line-height: 1.7;
+  color: $pink;
+  line-height: 30px;
   text-transform: uppercase;
   display: block;
   text-align: center;

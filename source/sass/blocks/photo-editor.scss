@@ -4,7 +4,7 @@
 	justify-content: space-around;
 	align-items: center;
 	margin-top: 50px;
-	background-color: $baseGrey;
+	background-color: $grey;
 }
 .photo-editor__photo-add {
 	display: flex;
@@ -28,9 +28,9 @@
 	border: none;
 	&:hover,
 	&:focus {
-		color: $basePink;
+		color: $pink;
 	}
 	&:active {
-		color: $basePink--lighter;
+		color: $pink--lighter;
 	}
 }

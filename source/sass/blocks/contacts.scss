@@ -2,31 +2,31 @@
 	padding-top: 50px;
 }
 .contacts__title {
-	color: $baseBlue;
+	color: $blue;
 	text-align: center;
 	font-weight: normal;
 	font-size: 24px;
 }
 .contacts__subtitle {
-	color: $baseBlue;
+	color: $blue;
 	text-align: center;
 	font-weight: normal;
 	font-size: 18px;
 }
 .contacts__link {
-	color: $basePink;
+	color: $pink;
 	text-align: center;
 	font-weight: normal;
 	font-size: 24px;
 	text-decoration: none;
 	&:hover,
 	&:focus {
-		color: $baseBlue;
+		color: $blue;
 		padding-bottom: 2px;
-		border-bottom: 1px solid $baseBlue;
+		border-bottom: 1px solid $blue;
 	}
 	&:active {
-		color: rgba($baseBlue, 0.3);
+		color: rgba($blue, 0.3);
 		border-bottom: none;
 	}
 }

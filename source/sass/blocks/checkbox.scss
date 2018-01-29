@@ -5,8 +5,8 @@
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 18px;
-	color: $baseBlue;
-	line-height: 1.7;
+	color: $blue;
+	line-height: 30px;
 	position: relative;
 	padding-left: 70px;
 }
@@ -17,7 +17,7 @@
 	left: 0;
 	width: 40px;
 	height: 40px;
-	background: $baseWhite;
+	background: $white;
 	border: 2px solid #e5e5e5;
 }
 .checkbox {

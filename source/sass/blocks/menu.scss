@@ -12,15 +12,16 @@
 .menu__link {
 	font-size: 18px;
 	font-family: $base-font;
-	color: $baseWhite;
+	color: $white;
 	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
+	line-height: 32px;
 	&:hover,
 	&:focus {
-		color: $basePink;
+		color: $pink;
 	}
 	&:active {
-		color: rgba($basePink, 0.3);
+		color: rgba($pink, 0.3);
 	}
 }
