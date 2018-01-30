@@ -6,12 +6,15 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+  <div class="site-wrapper">
     <header class="page-header">
         <nav class="page-header__navigation page-navigation">
-            <a class="logo page-header__logo" href="index.html">
-                <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-            </a>
-            <button class="page-navigation__toggle" type="button">Меню</button>
+            <div class="page-navigation__mobile">
+              <a class="logo page-header__logo" href="index.html">
+                  <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+              </a>
+              <button class="page-navigation__toggle" type="button">Меню</button>
+            </div>
             <div class="page-navigation__wrapper">
                 <ul class="menu">
                     <li class="menu__item">
@@ -34,7 +37,7 @@
         <section class="app-download">
             <h1 class="visually-hidden">Скачайте приложение Pink</h1>
             <a class="button button--download" href="#">Скачать приложение</a>
-            <div class="app-download-icons download-icons">
+            <div class="app-download__icons download-icons">
                 <a class="download-icons__item download-icons__item--ios" href="#">Скачать приложение для iOS</a>
                 <a class="download-icons__item download-icons__item--android" href="#">Скачать приложение для Android</a>
                 <a class="download-icons__item download-icons__item--windows" href="#">Скачать приложение для Windows</a>
@@ -189,6 +192,7 @@
                 <span class="contacts__link" href="mailto:mail@htmlacademy.ru">ул. Большая Конюшенная, 19/8</span>
             </div>
         </section>
-    </main>
+      </main>
+    </div>
   </body>
 </html>

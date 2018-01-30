@@ -1,6 +1,10 @@
 .app-download {
   background-color: $blue--dark;
   text-align: center;
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 35px;
 }
 
 .app-download__text {
@@ -12,4 +16,11 @@
   line-height: 24px;
   padding-top: 28px;
   padding-bottom: 35px;
+}
+
+.app-download__icons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
