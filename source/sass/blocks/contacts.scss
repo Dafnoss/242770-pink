@@ -1,18 +1,37 @@
 .contacts {
   padding-top: 50px;
 }
+.contacts__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contacts__item {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: $tablet-width) {
+    min-width: 290px;
+  }
+}
 
 .contacts__title {
   color: $blue;
   text-align: center;
   font-weight: normal;
   font-size: 24px;
+  line-height: normal;
+    @media screen and (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: normal;
+    }
 }
 
 .contacts__subtitle {
   color: $blue;
   text-align: center;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 18px;
 }
 

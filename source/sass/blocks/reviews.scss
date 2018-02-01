@@ -5,11 +5,31 @@
   font-family: $base-font;
 }
 
+.reviews__item {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .reviews__author {
   font-size: 18px;
+  font-weight: bold;
   font-style: normal;
   line-height: 30px;
   color: $black;
+  padding-top: 50px;
+  padding-bottom: 30px;
+    @media screen and (min-width: $tablet-width) {
+      padding-top: 40px;
+      padding-bottom: 18px;
+    }
+}
+
+.reviews__years {
+  font-size: 14px;
+  line-height: 30px;
+  color: $blue;
 }
 
 .reviews__text {

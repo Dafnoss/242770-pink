@@ -10,6 +10,13 @@
   padding: 0;
   margin: 0;
   text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 620px;
+    background-size: cover;
+    background-position: 50% 67%;
+    position: relative;
+  }
 }
 
 .page-title__text {
@@ -17,6 +24,20 @@
   margin: 0;
   color: $white;
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: normal;
   line-height: 30px;
+
+  &--center {
+    @media screen and (min-width: $tablet-width) {
+      text-align: center;
+      padding-top: 50px;
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 40px;
+    margin-right: 350px;
+    line-height: normal;
+  } 
 }

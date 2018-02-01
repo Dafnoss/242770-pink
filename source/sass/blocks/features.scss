@@ -3,6 +3,7 @@
 }
 
 .features__wrapper {
+  padding-top: 50px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -11,5 +12,14 @@
   display: block;
   font-size: 24px;
   color: $blue;
-  margin-top: 42px;
+  padding-top: 46px;
+  padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+  
+  @media screen and (min-width: $tablet-width) {
+      font-size: 40px;
+      padding-bottom: 30px;
+      padding-top: 0;
+    }
 }

@@ -1,3 +1,14 @@
 .rates {
   text-align: center;
 }
+
+.rates__item {
+ width: 100%;
+}
+
+.rates__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
