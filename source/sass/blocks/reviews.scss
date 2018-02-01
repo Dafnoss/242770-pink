@@ -6,6 +6,7 @@
 }
 
 .reviews__item {
+
   @media screen and (min-width: $tablet-width) {
     display: flex;
     flex-direction: column-reverse;
@@ -20,10 +21,11 @@
   color: $black;
   padding-top: 50px;
   padding-bottom: 30px;
-    @media screen and (min-width: $tablet-width) {
-      padding-top: 40px;
-      padding-bottom: 18px;
-    }
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 18px;
+  }
 }
 
 .reviews__years {

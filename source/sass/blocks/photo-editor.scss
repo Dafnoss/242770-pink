@@ -16,9 +16,10 @@
 
 .photo-editor__picture {
   padding-top: 20px;
-    @media screen and (min-width: $tablet-width) {
-      padding-right: 350px;
-    }
+
+  @media screen and (min-width: $tablet-width) {
+    padding-right: 350px;
+  }
 }
 
 .photo-editor__controls {
@@ -29,8 +30,8 @@
   margin-top: 40px;
 
   @media screen and (min-width: $tablet-width) {
-      position: absolute;
-      flex-direction: column;
+    position: absolute;
+    flex-direction: column;
     }
 }
 
