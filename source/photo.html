@@ -6,22 +6,19 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="site-wrapper">
-      <header class="page-header">
+        <header class="page-header">
         <nav class="page-header__navigation page-navigation">
-            <div class="page-navigation__mobile">
-              <a class="logo page-header__logo" href="index.html">
-                  <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-              </a>
-              <button class="page-navigation__toggle" type="button">Меню</button>
-            </div>
-            <div class="page-navigation__wrapper">
+            <div class="page-navigation__wrapper container">
+                <a class="logo page-header__logo" href="index.html">
+                    <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+                </a>
+                <button class="page-navigation__toggle" type="button">Меню</button>
                 <ul class="menu">
                     <li class="menu__item">
-                        <a class="menu__link" href="index.html">Главная</a>
+                        <span class="menu__link menu__link--current">Главная</span>
                     </li>
                     <li class="menu__item">
-                        <span class="menu__link menu__link--current">Фотографии</span>
+                        <a class="menu__link" href="photo.html">Фотографии</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="form.html">Конкурс</a>
@@ -32,11 +29,11 @@
                 </ul>
             </div>
         </nav>
-    </header>
-      <main class="main">
-          <div class="page-title">
+        <div class="page-title">
               <h3 class="page-title__text page-title__text--center">Фотографии пользователей</h3>
-          </div>
+        </div>
+      </header>
+      <main class="main">
           <div class="main-slogan">
               <p class="main-slogan__text">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! <br>Видите,&nbsp;как&nbsp;не&nbsp;хватает ваших?</p>
           </div>
@@ -192,6 +189,5 @@
               </a>
           </div>
       </footer>
-    </div>
   </body>
 </html>

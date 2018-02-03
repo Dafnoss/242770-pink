@@ -9,9 +9,6 @@
 }
 
 .page-header__navigation {
-
-  @media screen and (min-width: $desktop-width) {
     display: flex;
     justify-content: space-around;
-  }
 }
