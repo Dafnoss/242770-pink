@@ -1,15 +1,10 @@
-.app-download {
-  background-color: $blue--dark;
-  text-align: center;
-  padding-top: 28px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 35px;
+.app-download__container {
+  width: 300px;
 
   @media screen and (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 20px;
-    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 110px;
   }
 }
 
@@ -20,13 +15,15 @@
   font-weight: lighter;
   color: $white;
   line-height: 24px;
-  padding-top: 28px;
-  padding-bottom: 35px;
 }
 
 .app-download__icons {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 30px;
+
+    @media screen and (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 45px;
+  }
 }

@@ -1,11 +1,19 @@
 .reviews {
   display: flex;
-  padding-top: 50px;
+  flex-direction: column;
   text-align: center;
   font-family: $base-font;
 }
+.reviews-wrapper {
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .reviews__item {
+  margin: 0;
+  padding: 0;
+
   @media screen and (min-width: $tablet-width) {
     display: flex;
     flex-direction: column-reverse;
@@ -28,9 +36,14 @@
 }
 
 .reviews__years {
-  font-size: 14px;
-  line-height: 30px;
-  color: $blue;
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: $blue;
+  }
 }
 
 .reviews__text {

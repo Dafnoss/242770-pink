@@ -1,15 +1,19 @@
 .menu {
-  display: block;
+  display: none;
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: center;
-  position: relative;
+
+  @media screen and (min-width: $desktop-width) {
+      display: flex;
+  }
 }
 
 .menu__item {
   box-shadow: 0 -1px 0 $black,
     inset 0 1px 0 rgba($white, 0.15);
+  background: $blue;
 }
 
 .menu__link {

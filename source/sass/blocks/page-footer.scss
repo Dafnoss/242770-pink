@@ -1,17 +1,16 @@
 .page-footer {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-around;
   margin-top: 40px;
 
   &--index {
-    @media (min-width: $mobile-width) {
-      display: none;
-    }
-  }
+    display: none;
 
-  @media screen and (min-width: $mobile-width) {
-    flex-direction: column;
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+    }
   }
 
   @media screen and (min-width: $tablet-width) {

@@ -1,5 +1,11 @@
 .contacts {
+  background-color: $white;
+}
+
+.contacts-wrapper {
   padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .contacts__items {
@@ -56,4 +62,19 @@
     color: rgba($blue, 0.3);
     border-bottom: none;
   }
+
+  &--no-link {
+
+    &:hover,
+    &:focus {
+    color: $pink;
+    border-bottom: none;
+    }
+  }
+
+    &:active {
+    color: $pink;
+    border-bottom: none;
+  }
+
 }
