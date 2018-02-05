@@ -50,7 +50,7 @@
   }
 
   &--panorama {
-     @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: $tablet-width) {
       padding-top: 14px;
       padding-bottom: 15px;
     }
