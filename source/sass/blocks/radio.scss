@@ -1,3 +1,7 @@
+.radio {
+  padding-top: 20px;
+}
+
 .radio__control {
   position: absolute;
   display: none;
@@ -36,8 +40,4 @@
 
 .radio__control:checked + .radio__label::after {
   opacity: 1;
-}
-
-.radio {
-  padding-top: 20px;
 }

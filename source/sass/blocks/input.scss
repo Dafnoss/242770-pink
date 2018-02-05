@@ -1,10 +1,11 @@
 .input__label {
+  display: block;
   font-size: 14px;
   line-height: 1.7;
   color: $pink;
-  display: block;
   margin-top: 25px;
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .input__field {

@@ -48,4 +48,10 @@
       font-weight: normal;
       text-transform: none;
   }
+
+  &--current {
+    @media screen and (min-width: $desktop-width) {
+      border-bottom: 2px solid $pink;
+    }
+  }
 }

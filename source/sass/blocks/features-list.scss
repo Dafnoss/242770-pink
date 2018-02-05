@@ -8,6 +8,25 @@
     padding-top: 15px;
     padding-left: 50%;
   }
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    padding-left: 0;
+  }
+}
+
+.features-list__item {
+
+  &--image {
+    padding-bottom: 300px;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 155%;
+
+    @media screen and (min-width: $tablet-width) {
+      padding-bottom: 46px;
+      background: none;
+    }
+  }
 }
 
 .features-list__title {

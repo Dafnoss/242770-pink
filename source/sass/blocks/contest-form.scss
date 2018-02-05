@@ -1,9 +1,7 @@
 .contest-form__item {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
 
   &--achievements {
     background-color: $grey;
@@ -16,18 +14,11 @@
   }
 
   @media screen and (min-width: $tablet-width) {
-    flex-direction: row;
-  }
-}
-
-.contest-form__input {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   flex-direction: row;
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 50px;
+  flex-wrap: wrap;
+  }
 }
 
 .contest-form__subtitle {
