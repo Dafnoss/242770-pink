@@ -1,0 +1,52 @@
+.features-research {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    padding-left: 50%;
+    padding-bottom: 60px;
+    line-height: 30px;
+    text-align: left;
+  }
+}
+
+.features-research__title {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    color: $black;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.features-research__info {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    color: $blue;
+    font-size: 18px;
+  }
+
+}
+
+.features-research__link {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    color: $pink;
+    font-size: 18px;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+
+    &:active {
+      color: rgba($blue, 0.3);
+    }
+  }
+}

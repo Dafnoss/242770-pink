@@ -10,6 +10,22 @@
     justify-content: space-between;
     padding-top: 5px;
   }
+
+  &--top {
+    position: absolute;
+    top: 63px;
+    left: 0;
+    width: 100%;
+
+    @media screen and (min-width: $tablet-width) {
+      position: relative;
+      top: 0;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      top: -10px;
+    }
+  }
 }
 
 .menu__item {
@@ -47,7 +63,12 @@
       line-height: 18px;
       font-weight: normal;
       text-transform: none;
-  }
+
+      &:active {
+        color: $white;
+        border-bottom: 2px solid $white;
+      }
+    }
 
   &--current {
     @media screen and (min-width: $desktop-width) {

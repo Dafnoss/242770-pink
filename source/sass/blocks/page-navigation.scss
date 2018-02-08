@@ -4,18 +4,25 @@
 
 .page-navigation {
   display: flex;
+  position: relative;
   justify-content: space-between;
-  padding: 25px;
+  padding: 20px;
   background-color: rgba($black, 0.3);
 }
 
 .page-navigation__toggle {
   display: block;
+  padding: 0;
   font-size: 0;
   background-color: transparent;
   width: 50px;
   height: 25px;
-  border: 2px solid $white;
+  margin-left: 156px;
+  border: none;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-left: 490px;
+  }
 
   @media screen and (min-width: $desktop-width) {
     display: none;

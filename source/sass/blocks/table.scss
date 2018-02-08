@@ -1,8 +1,8 @@
 .table {
   text-align: center;
   color: $white;
-  border-collapse: collapse;
   width: 100%;
+  border: 2px solid $grey;
 }
 
 .table__title {
@@ -34,13 +34,13 @@
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 0;
-  background-image: url("../img/icon-yes.svg");
-  background-position: 50%;
-  background-repeat: no-repeat;
   display: flex;
-  align-items: center;
+}
 
-  &--disabled {
-    background-image: url("../img/icon-no.svg");
-  }
+.table__icon-yes {
+  fill: #3dc644;
+}
+
+.table__icon-no {
+  fill: #f25b26;
 }

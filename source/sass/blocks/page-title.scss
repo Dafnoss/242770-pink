@@ -30,5 +30,9 @@
       padding-top: 50px;
       padding-bottom: 40px;
     }
+
+    @media screen and (min-width: $tablet-width) {
+      padding-left: 146px;
+    }
   }
 }

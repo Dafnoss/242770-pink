@@ -1,0 +1,34 @@
+.slider__toggles {
+  padding-top: 40px;
+}
+
+.slider__toggle {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+  border: none;
+  margin-right: 20px;
+  background-color: rgba($blue, 0.3);
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  cursor: pointer;
+
+  &--active {
+    background-color: $white;
+    border: 3px solid $blue;
+    width: 13px;
+    height: 13px;
+  }
+}
+
+.slider__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
