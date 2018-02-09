@@ -61,14 +61,15 @@
 
     &:hover,
     &:focus {
-    color: $pink;
-    border-bottom: none;
+      color: $pink;
+      border-bottom: none;
+      padding-bottom: 0;
     }
   }
 
     &:active {
-    color: $pink;
-    border-bottom: none;
+      color: $pink;
+      border-bottom: none;
   }
 }
 
@@ -76,4 +77,15 @@
   border: none;
   width: 100%;
   height: 500px;
+}
+
+.contacts__decoration {
+  position: relative;
+}  
+
+.contacts__triangle {
+  fill: $white;
+  width: 1200px;
+  position: absolute;
+  top: -10px;
 }

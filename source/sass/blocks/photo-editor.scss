@@ -11,13 +11,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .photo-editor__picture {
   padding-top: 20px;
 
   @media screen and (min-width: $tablet-width) {
-    padding-right: 350px;
+    right: 100%;
+    position: absolute;
   }
 }
 
@@ -28,12 +30,21 @@
   text-align: center;
   padding-top: 40px;
   padding-bottom: 30px;
+  padding-left: 30px;
+  flex-wrap: wrap;
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
   }
+}
+
+.photo-editor__control {
+
+   @media screen and (min-width: $desktop-width) {
+      display: flex;
+   }
 }
 
 .photo-editor__control-button {
@@ -67,6 +78,7 @@
 .photo-editor__control-bar {
   width: 280px;
   box-sizing: border-box;
+  padding-top: 25px;
   position: relative;
 }
 
@@ -82,8 +94,16 @@
   border: 2px solid $pink;
   border-radius: 50%;
   position: absolute;
-  bottom: -5px;
+  top: 20px;
   right: 25px;
+
+  &--fill {
+    right: 50px;
+  }
+
+  &--filter {
+    right: 60px;
+  }
 }
 
 .photo-editor__separator {

@@ -1,8 +1,9 @@
 .table {
   text-align: center;
+  background-color: $white;
   color: $white;
   width: 100%;
-  border: 2px solid $grey;
+  border-collapse: collapse;
 }
 
 .table__title {
@@ -11,6 +12,14 @@
   font-weight: bold;
   line-height: 30px;
   padding: 20px;
+  border: 2px solid $grey;
+
+  @media screen and (min-width: $tablet-width) {
+    &--empty {
+      background-color: transparent;
+      border: none;
+    }
+  }
 }
 
 .table__cost {
@@ -27,14 +36,19 @@
   line-height: 30px;
   text-align: left;
   padding: 20px;
-  width: 80%;
+  border: 2px solid $grey;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
 }
 
 .table__value {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 0;
-  display: flex;
+  border: 2px solid $grey;
 }
 
 .table__icon-yes {

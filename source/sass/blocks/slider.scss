@@ -1,5 +1,18 @@
+.slider__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
 .slider__toggles {
   padding-top: 40px;
+}
+
+.slider__button {
+  position: absolute;
+  opacity: 0;
 }
 
 .slider__toggle {
@@ -22,13 +35,5 @@
     border: 3px solid $blue;
     width: 13px;
     height: 13px;
-  }
-}
-
-.slider__item {
-  display: none;
-
-  &--active {
-    display: block;
   }
 }

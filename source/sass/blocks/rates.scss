@@ -4,4 +4,12 @@
   flex-direction: column;
   padding-top: 63px;
   padding-bottom: 40px;
+  background-color: $grey;
+}
+
+.rates__toggles {
+
+  @media screen and (min-width: $tablet-width) {
+  	display: none;
+  }
 }

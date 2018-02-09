@@ -4,6 +4,12 @@
   @media screen and (min-width: $tablet-width) {
     flex-basis: 280px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    &--panorama {
+      min-width: 1200px;
+    }
+  }
 }
 
 .photo__description {
@@ -15,6 +21,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+  }
+
+  &--panorama {
+    background-color: $grey;
+    width: 100%;
+    padding-bottom: 26px;
   }
 }
 

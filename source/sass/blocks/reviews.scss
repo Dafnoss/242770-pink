@@ -4,6 +4,16 @@
   flex-direction: column;
   text-align: center;
   font-family: $base-font;
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 190px;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: 50% 22%;
+    position: relative;
+    padding-bottom: 50px;
+  }
 }
 
 .reviews__item {
@@ -27,6 +37,7 @@
   @media screen and (min-width: $tablet-width) {
     padding-top: 40px;
     padding-bottom: 18px;
+    font-size: 24px;
   }
 }
 
@@ -39,6 +50,10 @@
     line-height: 30px;
     color: $blue;
   }
+
+   @media screen and (min-width: $tablet-width) {
+    font-size: 18px;
+   }
 }
 
 .reviews__text {
@@ -46,4 +61,33 @@
   font-style: normal;
   line-height: 30px;
   color: $blue;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.reviews__toggle {
+  display: none;
+
+  @media screen and (min-width: $desktop-width) {
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 70px;
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 22px 41px;
+    cursor: pointer; 
+    top: 50%;
+    left: 20px;
+
+    &--next {
+      left: 90%;
+    }
+  }
 }
