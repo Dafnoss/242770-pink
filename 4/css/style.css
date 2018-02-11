@@ -884,9 +884,7 @@ body {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 30px;
-  padding-left: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  padding-left: 30px; }
   @media screen and (min-width: 660px) {
     .photo-editor__controls {
       display: -webkit-box;
@@ -897,7 +895,9 @@ body {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
 
 @media screen and (min-width: 1200px) {
   .photo-editor__control {
@@ -910,7 +910,7 @@ body {
   vertical-align: middle;
   margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: 30px;
+  margin-top: 20px;
   font-size: 0;
   border-radius: 0;
   background-color: transparent;
@@ -926,11 +926,17 @@ body {
     fill: #f2ced5; }
 
 .photo-editor__control-bar {
+  display: none;
   width: 280px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 25px;
+  padding-top: 45px;
   position: relative; }
+  @media screen and (min-width: 660px) {
+    .photo-editor__control-bar {
+      display: block; } }
+  .photo-editor__control-bar--mobile-active {
+    display: block; }
 
 .photo-editor__scale-bar {
   height: 2px;
@@ -943,7 +949,7 @@ body {
   border: 2px solid #d22856;
   border-radius: 50%;
   position: absolute;
-  top: 20px;
+  top: 40px;
   right: 25px; }
   .photo-editor__toggle--fill {
     right: 50px; }
@@ -962,7 +968,8 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  width: 280px; }
   .contest-form__item--achievements {
     background-color: #f2f2f2;
     padding-bottom: 20px;
@@ -984,6 +991,32 @@ body {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
 
+.contest-form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: none; }
+
+.contest-form__apps-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #f2f2f2; }
+
+.contest-form__contacts-wrapper {
+  border: 2px solid #f2f2f2; }
+
+.contest-form__emotions-wrapper {
+  border: 2px solid #f2f2f2; }
+
 .contest-form__subtitle {
   padding-top: 40px; }
 
@@ -991,7 +1024,10 @@ body {
   text-transform: uppercase;
   color: #d22856;
   font-size: 14px;
-  line-height: 18px; }
+  line-height: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center; }
 
 .contest-form__footer {
   display: -webkit-box;
@@ -1017,6 +1053,9 @@ body {
   line-height: 30px;
   text-transform: uppercase; }
 
+.contest-form__achievements-wrapper {
+  background-color: #f2f2f2; }
+
 .input__label {
   display: block;
   font-size: 14px;
@@ -1031,6 +1070,9 @@ body {
   color: #283645;
   padding: 15px 15px;
   border: 2px solid #e5e5e5; }
+  .input__field:focus, .input__field:active {
+    border: 2px solid #d22856;
+    outline: none; }
 
 .checkbox {
   margin-top: 50px;
@@ -1068,39 +1110,34 @@ body {
   padding-top: 20px; }
 
 .radio__control {
-  position: absolute;
-  display: none;
-  margin-top: 10px; }
+  display: none; }
 
 .radio__label {
   position: relative;
   cursor: pointer;
-  padding-left: 70px; }
+  padding-bottom: 20px;
+  display: inline-block; }
 
-.radio__label::before {
+.radio__control + .radio__label:before {
   content: "";
-  position: absolute;
-  top: -3px;
-  left: 0;
-  width: 37px;
-  height: 37px;
-  border: 2px solid #e5e5e5;
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #f2f2f2;
   border-radius: 50%;
-  background: #ffffff; }
+  margin-right: 20px; }
 
-.radio__label::after {
+.radio__control:checked + .radio__label:after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 13px;
   width: 15px;
   height: 15px;
+  background-color: #d22856;
   border-radius: 50%;
-  background: #d22856;
-  opacity: 0; }
-
-.radio__control:checked + .radio__label::after {
-  opacity: 1; }
+  left: 12px;
+  top: 11px; }
 
 .textarea__text {
   font-size: 18px;
@@ -1110,7 +1147,10 @@ body {
   min-width: 50px;
   min-height: 130px;
   margin-top: 19px;
-  border: 2px solid #e5e5e5; }
+  border: 2px solid #e5e5e5;
+  outline: none; }
+  .textarea__text:hover, .textarea__text:focus {
+    border: 2px solid #d22856; }
 
 .textarea__label {
   font-size: 14px;
