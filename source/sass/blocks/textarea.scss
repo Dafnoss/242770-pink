@@ -7,6 +7,12 @@
   min-height: 130px;
   margin-top: 19px;
   border: 2px solid #e5e5e5;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $pink;
+  }
 }
 
 .textarea__label {
