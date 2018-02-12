@@ -1,8 +1,11 @@
+.contest-form {
+  display: flex;
+}
+
 .contest-form__item {
   display: flex;
   align-content: center;
   flex-direction: column;
-  width: 280px;
 
   &--achievements {
     background-color: $grey;
@@ -12,6 +15,18 @@
 
   &--review {
     margin-top: 50px;
+  }
+
+  &--apps {
+    order: 5;
+
+    @media screen and (min-width: $desktop-width) {
+    order: 0;
+    }
+  }
+
+  &--name {
+    width: 50%;
   }
 
   @media screen and (min-width: $tablet-width) {
@@ -28,6 +43,7 @@
   padding: 0;
   margin: 0;
   border: none;
+  width: 50%;
 }
 
 .contest-form__apps-wrapper {
@@ -35,6 +51,11 @@
   padding-right: 20px;
   display: flex;
   border: 2px solid $grey;
+
+  @media screen and (min-width: $desktop-width) {
+    min-width: 500px;
+  }
+
 }
 
 .contest-form__contacts-wrapper {
