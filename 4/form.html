@@ -54,8 +54,8 @@
                 <p class="main-slogan__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на <br>вашу бонусную карту!</p>
             </div>
             <form class="contest-form" method="post">
-                <section class="contest-form__item contest-form__item--name container">
-                    <fieldset class="contest-form__wrapper">
+                <fieldset class="contest-form__item contest-form__wrapper">
+                    <div class="container">
                         <label class="input contest-form__input">
                             <span class="input__label">Фамилия:</span>
                             <input class="input__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
@@ -68,8 +68,24 @@
                             <span class="input__label">Отчество:</span>
                             <input class="input__field" type="text" name="patronymic" id="patronymic" placeholder="Ну&nbsp;и&nbsp;отчество тоже">
                         </label>
-                    </fieldset>
-                </section>
+                    </div>
+                </fieldset>
+                <fieldset class="contest-form__item contest-form__apps-wrapper">
+                    <legend class="contest-form__subtitle-inner">С&nbsp;каким приложением путешествовали?</legend>
+                    <label class="radio contest-form__radio">
+                        <input class="radio__control" type="radio" name="apps-ios" id="apps-ios" checked>
+                        <span class="radio__label">Pink для iOS</span>
+                    </label>
+                    <label class="radio contest-form__radio">
+                         <input class="radio__control" type="radio" name="apps-android" id="apps-android">
+                        <span class="radio__label">Pink на&nbsp;Android</span>
+                    </label>
+                    <label class="radio contest-form__radio">
+                        <input class="radio__control" type="radio" name="apps-windows" id="apps-windows">
+                        <span class="radio__label">Windows Phone</span>
+                    </label>
+                </fieldset>
+                <!--
                 <section class="contest-form__item contest-form__item--achievements container">
                         <div class="contest-form__subtitle">
                             <span class="contest-form__subtitle-inner">Ваши безбашенные достижения в&nbsp;путешествии</span>
@@ -112,23 +128,7 @@
                         </label>
                     </fieldset>
                 </section>
-                <section class="contest-form__item contest-form__item--apps container">
-                    <fieldset class="contest-form__apps-wrapper">
-                        <legend class="contest-form__subtitle-inner">С&nbsp;каким приложением путешествовали?</legend>
-                        <label class="radio contest-form__radio">
-                            <input class="radio__control" type="radio" name="apps-ios" id="apps-ios" checked>
-                            <span class="radio__label">Pink для iOS</span>
-                        </label>
-                        <label class="radio contest-form__radio">
-                            <input class="radio__control" type="radio" name="apps-android" id="apps-android">
-                            <span class="radio__label">Pink на&nbsp;Android</span>
-                        </label>
-                        <label class="radio contest-form__radio">
-                            <input class="radio__control" type="radio" name="apps-windows" id="apps-windows">
-                            <span class="radio__label">Windows Phone</span>
-                        </label>
-                        </fieldset>
-                </section>
+                
                 <section class="contest-form__item contest-form__item--review container">
                     <fieldset class="contest-form__emotions-wrapper">
                         <legend class="contest-form__subtitle-inner">Опишите свои эмоции</legend>
@@ -137,6 +137,7 @@
                         </label>
                     </fieldset>
                 </section>
+            -->
                 <footer class="contest-form__footer container">
                     <button class="button button--submit" type="submit">Отправить форму</button>
                     <p class="contest-form__note"><span class="contest-form__note-accent">*</span> &mdash;&nbsp;обязательные поля</p>

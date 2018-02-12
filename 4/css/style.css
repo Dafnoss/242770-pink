@@ -959,6 +959,11 @@ body {
 .photo-editor__separator {
   width: 100%; }
 
+.contest-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .contest-form__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -968,14 +973,24 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  width: 280px; }
+          flex-direction: column; }
   .contest-form__item--achievements {
     background-color: #f2f2f2;
     padding-bottom: 20px;
     margin-top: 30px; }
   .contest-form__item--review {
     margin-top: 50px; }
+  .contest-form__item--apps {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5; }
+    @media screen and (min-width: 1200px) {
+      .contest-form__item--apps {
+        -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 0;
+                order: 0; } }
+  .contest-form__item--name {
+    width: 50%; }
   @media screen and (min-width: 660px) {
     .contest-form__item {
       display: -webkit-box;
@@ -1001,7 +1016,8 @@ body {
           flex-direction: column;
   padding: 0;
   margin: 0;
-  border: none; }
+  border: none;
+  width: 50%; }
 
 .contest-form__apps-wrapper {
   padding-left: 20px;
@@ -1010,6 +1026,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   border: 2px solid #f2f2f2; }
+  @media screen and (min-width: 1200px) {
+    .contest-form__apps-wrapper {
+      min-width: 500px; } }
 
 .contest-form__contacts-wrapper {
   border: 2px solid #f2f2f2; }
@@ -1056,12 +1075,21 @@ body {
 .contest-form__achievements-wrapper {
   background-color: #f2f2f2; }
 
+.input {
+  display: block; }
+  @media screen and (min-width: 660px) {
+    .input {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
 .input__label {
   display: block;
   font-size: 14px;
   line-height: 1.7;
   color: #d22856;
   margin-top: 25px;
+  padding-right: 20px;
   margin-bottom: 12px;
   text-transform: uppercase; }
 
@@ -1069,10 +1097,18 @@ body {
   font-size: 18px;
   color: #283645;
   padding: 15px 15px;
-  border: 2px solid #e5e5e5; }
+  border: 2px solid #e5e5e5;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-bottom: 20px; }
   .input__field:focus, .input__field:active {
     border: 2px solid #d22856;
     outline: none; }
+  @media screen and (min-width: 660px) {
+    .input__field {
+      min-width: 340px;
+      margin-bottom: 55px; } }
 
 .checkbox {
   margin-top: 50px;
