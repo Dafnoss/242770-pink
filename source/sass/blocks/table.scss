@@ -4,6 +4,11 @@
   color: $white;
   width: 100%;
   border-collapse: collapse;
+
+   @media screen and (max-width: $tablet-width) {
+    min-width: 1080px;
+    margin-left: -380px;
+   }
 }
 
 .table__title {
@@ -14,8 +19,11 @@
   padding: 20px;
   border: 2px solid $grey;
 
-  @media screen and (min-width: $tablet-width) {
-    &--empty {
+  &--empty {
+    display: none;
+
+    @media screen and (min-width: $tablet-width) {
+      display: table-cell;
       background-color: transparent;
       border: none;
     }
@@ -31,24 +39,43 @@
 }
 
 .table__field {
-  color: $blue;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: left;
-  padding: 20px;
-  border: 2px solid $grey;
+  display: none;
 
   @media screen and (min-width: $tablet-width) {
+    display: table-cell;
+    color: $black;
     font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid $grey;
   }
-
 }
 
 .table__value {
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 0;
   border: 2px solid $grey;
+  text-align: left;
+
+  @media screen and (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+
+.mobile-only {
+    display: none;
+
+  @media screen and (max-width: $tablet-width) {
+    color: $black;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    padding-right: 70px;
+    padding-left: 50px;
+  }
 }
 
 .table__icon-yes {

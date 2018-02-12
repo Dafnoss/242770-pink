@@ -1,11 +1,15 @@
 .contest-form {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .contest-form__item {
   display: flex;
   align-content: center;
-  flex-direction: column;
+  flex-direction: row;
+
 
   &--achievements {
     background-color: $grey;
@@ -53,7 +57,7 @@
   border: 2px solid $grey;
 
   @media screen and (min-width: $desktop-width) {
-    min-width: 500px;
+    width: 50%;
   }
 
 }
