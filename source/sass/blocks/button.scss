@@ -45,6 +45,11 @@
       background-color: $pink;
       color: $pink--lighter;
     }
+
+    @media screen and (min-width: $desktop-width) {
+      min-width: 183px;
+      margin-right: 20px;
+    }
   }
 
   &--submit {
@@ -87,6 +92,10 @@
       color: rgba($white, 0.3);
       border: 3px solid rgba($blue, 0.3);
       background-color: rgba($blue, 0.3);
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      min-width: 183px;
     }
   }
 }

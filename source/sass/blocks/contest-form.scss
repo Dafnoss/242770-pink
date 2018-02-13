@@ -6,31 +6,55 @@
 }
 
 .contest-form__item {
-  display: flex;
-  align-content: center;
-  flex-direction: row;
+  box-sizing: border-box;
+  border: none;
 
+  @media screen and (min-width: $tablet-width) {
+    border: 2px solid $grey;
+  }
 
   &--achievements {
+    display: block;
     background-color: $grey;
     padding-bottom: 20px;
     margin-top: 30px;
+    box-sizing: border-box;
+    order: 3;
+
+    @media screen and (min-width: $tablet-width) {
+      order: 5;
+    }
   }
 
   &--review {
     margin-top: 50px;
+    box-sizing: border-box;
+    order: 7;
+    width: 100%;
   }
 
   &--apps {
+    width: 470px;
     order: 5;
+    box-sizing: border-box;
 
-    @media screen and (min-width: $desktop-width) {
-    order: 0;
+    @media screen and (min-width: $tablet-width) {
+      order: 3;
     }
   }
 
   &--name {
-    width: 50%;
+    order: 2;
+    border: none;
+    width: 470px;
+    box-sizing: border-box;
+  }
+
+  &--user-contacts {
+    order: 4;
+    border: inherit;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   @media screen and (min-width: $tablet-width) {
@@ -41,46 +65,13 @@
   }
 }
 
-.contest-form__wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-  border: none;
-  width: 50%;
-}
-
-.contest-form__apps-wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-  border: 2px solid $grey;
-
-  @media screen and (min-width: $desktop-width) {
-    width: 50%;
-  }
-
-}
-
-.contest-form__contacts-wrapper {
-  border: 2px solid $grey;
-}
-
-.contest-form__emotions-wrapper {
-  border: 2px solid $grey;
-}
-
-.contest-form__subtitle {
-  padding-top: 40px;
-}
-
 .contest-form__subtitle-inner {
   text-transform: uppercase;
   color: $pink;
   font-size: 14px;
   line-height: 18px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
 }
 
@@ -89,6 +80,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  order: 8;
 }
 
 .contest-form__note-accent {
@@ -104,6 +96,9 @@
   text-transform: uppercase;
 }
 
-.contest-form__achievements-wrapper {
-  background-color: $grey;
+.contest-form__textarea {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
 }

@@ -31,8 +31,11 @@
     outline: none;
   }
 
+  &:hover {
+    border: 2px solid $blue;
+  }
+
   @media screen and (min-width: $tablet-width) {
-    min-width: 340px;
     margin-bottom: 55px;
   }
 

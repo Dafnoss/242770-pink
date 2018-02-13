@@ -4,6 +4,7 @@
   padding-left: 20px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
 
   @media screen and (min-width: $tablet-width) {
     width: $tablet-width;
