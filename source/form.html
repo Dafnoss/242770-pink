@@ -50,7 +50,7 @@
     <main class="main">
             <h1 class="visually-hidden">Конкурс в&nbsp;приложении Pink</h1>
             <div class="main-slogan container">
-                <p class="main-slogan__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на <br>вашу бонусную карту!</p>
+                <p class="main-slogan__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту!</p>
             </div>
             <form class="contest-form container" method="post">
                 <fieldset class="contest-form__item contest-form__item--name">
@@ -69,58 +69,64 @@
                 </fieldset>
                 <fieldset class="contest-form__item contest-form__item--apps">
                     <legend class="contest-form__subtitle-inner">С&nbsp;каким приложением путешествовали?</legend>
-                    <label class="radio contest-form__radio">
-                        <input class="radio__control" type="radio" name="apps-ios" id="apps-ios" checked>
-                        <span class="radio__label">Pink для iOS</span>
-                    </label>
-                    <label class="radio contest-form__radio">
-                         <input class="radio__control" type="radio" name="apps-android" id="apps-android">
-                        <span class="radio__label">Pink на&nbsp;Android</span>
-                    </label>
-                    <label class="radio contest-form__radio">
-                        <input class="radio__control" type="radio" name="apps-windows" id="apps-windows">
-                        <span class="radio__label">Windows Phone</span>
-                    </label>
-                </fieldset>
-                <fieldset class="contest-form__item contest-form__item--achievements container">
-                    <div class="contest-form__subtitle">
-                        <span class="contest-form__subtitle-inner">Ваши безбашенные достижения в&nbsp;путешествии</span>
+                    <div class="contest-form__radio-wrapper">
+                      <label class="radio contest-form__radio">
+                          <input class="radio__control" type="radio" name="apps-ios" id="apps-ios" checked>
+                          <span class="radio__label">Pink для iOS</span>
+                      </label>
+                      <label class="radio contest-form__radio">
+                           <input class="radio__control" type="radio" name="apps-android" id="apps-android">
+                          <span class="radio__label">Pink на&nbsp;Android</span>
+                      </label>
+                      <label class="radio contest-form__radio">
+                          <input class="radio__control" type="radio" name="apps-windows" id="apps-windows">
+                          <span class="radio__label">Windows Phone</span>
+                      </label>
                     </div>
-                    <label class="checkbox contest-form__checkbox">
-                        <span class="checkbox__label">Сделал селфи с&nbsp;акулой</span>
-                        <input class="checkbox__control" type="checkbox" name="achievement-selfie" id="achievement-selfie" checked>
-                    </label>
-                    <label class="checkbox contest-form__checkbox">
-                        <span class="checkbox__label">Обгорел на&nbsp;пляже</span>
-                        <input class="checkbox__control" type="checkbox" name="achievement-beach" id="achievement-beach" checked>
-                    </label>
-                    <label class="checkbox contest-form__checkbox">
-                        <span class="checkbox__label">Видел Чака Норриса</span>
-                        <input class="checkbox__control" type="checkbox" name="achievement-norris" id="achievement-norris">
-                    </label>
-                    <label class="checkbox contest-form__checkbox">
-                        <span class="checkbox__label">Накупил сувениров</span>
-                        <input class="checkbox__control" type="checkbox" name="achievement-souvenirs" id="achievement-souvenirs">
-                    </label>
-                    <label class="checkbox contest-form__checkbox">
-                        <span class="checkbox__label">Удержал башню</span>
-                        <input class="checkbox__control" type="checkbox" name="achievement-tower" id="achievement-tower" checked>
-                    </label>
-                    <label class="checkbox contest-form__checkbox">
-                        <span class="checkbox__label">Разгромил отель</span>
-                        <input class="checkbox__control" type="checkbox" name="achievement-hotel" id="achievement-hotel">
-                    </label>
                 </fieldset>
-                <fieldset class="contest-form__item contest-form__item--user-contacts">
-                    <legend class="contest-form__subtitle-inner">Контактная информация</legend>
-                    <label class="input contest-form__input">
-                        <span class="input__label">Номер телефона</span>
-                        <input class="input__field input__field--telephone" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
-                    </label>
-                    <label class="input contest-form__input">
-                        <span class="input__label">Адрес почты</span>
-                        <input class="input__field input__field--email" type="email" name="email" id="email" placeholder="Введите почту *" required>
-                    </label>
+                <section class="contest-form__color-wrapper">
+                      <fieldset class="contest-form__item contest-form__item--achievements">
+                          <legend class="contest-form__subtitle-inner">Ваши безбашенные достижения в&nbsp;путешествии</legend>
+                          <div class="contest-form__checkbox-wrapper">
+                            <label class="checkbox contest-form__checkbox">
+                                <span class="checkbox__label">Сделал селфи с&nbsp;акулой</span>
+                                <input class="checkbox__control" type="checkbox" name="achievement-selfie" id="achievement-selfie" checked>
+                            </label>
+                            <label class="checkbox contest-form__checkbox">
+                                <span class="checkbox__label">Обгорел на&nbsp;пляже</span>
+                                <input class="checkbox__control" type="checkbox" name="achievement-beach" id="achievement-beach" checked>
+                            </label>
+                            <label class="checkbox contest-form__checkbox">
+                                <span class="checkbox__label">Видел Чака Норриса</span>
+                                <input class="checkbox__control" type="checkbox" name="achievement-norris" id="achievement-norris">
+                            </label>
+                            <label class="checkbox contest-form__checkbox">
+                                <span class="checkbox__label">Накупил сувениров</span>
+                                <input class="checkbox__control" type="checkbox" name="achievement-souvenirs" id="achievement-souvenirs">
+                            </label>
+                            <label class="checkbox contest-form__checkbox">
+                                <span class="checkbox__label">Удержал башню</span>
+                                <input class="checkbox__control" type="checkbox" name="achievement-tower" id="achievement-tower" checked>
+                            </label>
+                            <label class="checkbox contest-form__checkbox">
+                                <span class="checkbox__label">Разгромил отель</span>
+                                <input class="checkbox__control" type="checkbox" name="achievement-hotel" id="achievement-hotel">
+                            </label>
+                          </div>
+                      </fieldset>
+                </section>
+                <fieldset class="contest-form__item contest-form__item--user-contacts container">
+                    <legend class="contest-form__subtitle-inner contest-form__subtitle-inner--mobile-hidden">Контактная информация</legend>
+                    <div class="contest-form__input-wrapper">
+                      <label class="input contest-form__input">
+                          <span class="input__label">Номер телефона</span>
+                          <input class="input__field input__field--telephone" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                      </label>
+                      <label class="input contest-form__input">
+                          <span class="input__label">Адрес почты</span>
+                          <input class="input__field input__field--email" type="email" name="email" id="email" placeholder="Введите почту *" required>
+                      </label>
+                    </div>
                 </fieldset>
                 <fieldset class="contest-form__item contest-form__item--review">
                     <legend class="contest-form__subtitle-inner">Опишите свои эмоции</legend>
@@ -171,5 +177,23 @@
               </a>
           </div>
       </footer>
+      <div class="modal" id="form-fail">
+        <div class="modal__content">
+          <h3 class="modal__title">Что-то пошло не&nbsp;так!</h3>
+          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="button button--submit button--close-modal" type="button">ОК</button>
+        </div>
+      </div>
+      <div class="modal modal--big modal--show" id="form-success">
+        <div class="modal__content">
+          <h3 class="modal__title">Ваша заявка отправлена</h3>
+            <p class="modal__text">
+              Спасибо за&nbsp;ваше участие, ваша заявка уже поступила к&nbsp;нам. В&nbsp;ближайшее время мы рассмотрим ее и оповестим вас.
+            </p>
+        </div>
+        <div class="modal__footer">
+            <button class="button button--submit button--close-modal" type="button">Закрыть окно</button>
+        </div>
+      </div>
   </body>
 </html>
