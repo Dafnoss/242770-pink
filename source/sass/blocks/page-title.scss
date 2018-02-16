@@ -1,22 +1,42 @@
 .page-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: $blue--dark url("../img/bg-back-mobile@1x.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 170px;
-  padding: 0;
-  margin: 0;
   text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 14px;
+  }
 }
 
 .page-title__text {
-  padding: 0;
-  margin: 0;
   color: $white;
-  font-size: 24px;
-  font-weight: lighter;
+  font-weight: normal;
   line-height: 30px;
+
+    &--center {
+    @media screen and (min-width: $tablet-width) {
+      font-size: 50px;
+      line-height: normal;
+      text-align: center;
+      padding-top: 80px;
+      padding-bottom: 115px;
+    }
+  }
+
+  &--index {
+    display: none;
+
+    @media screen and (min-width: $tablet-width) {
+      display: block;
+      max-width: 250px;
+      padding: 0;
+      margin: 0;
+      font-size: 40px;
+      line-height: normal;
+      padding-top: 50px;
+      padding-left: 10px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      padding-left: 50px;
+    }
+  }
 }

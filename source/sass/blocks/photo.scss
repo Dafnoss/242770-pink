@@ -1,8 +1,35 @@
 .photo {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   margin-top: 50px;
+  box-sizing: border-box;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &--panorama {
+      min-width: 1200px;
+    }
+  }
+}
+
+.photo__description {
+  background-color: $grey;
+  padding-bottom: 20px;
+  max-width: 280px;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 300px;
+  }
+
+  &--panorama {
+    background-color: $grey;
+    width: 100%;
+    padding-bottom: 26px;
+  }
 }
 
 .photo__author {
@@ -10,6 +37,8 @@
   line-height: 24px;
   font-weight: bold;
   color: $blue;
+  padding-top: 24px;
+  padding-left: 17px;
 }
 
 .photo__time {
@@ -22,20 +51,64 @@
   text-align: left;
   color: $blue;
   font-weight: normal;
+  min-height: 50px;
+  padding-left: 17px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-left: 28px;
+    padding-top: 31px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+  }
+
+  &--panorama {
+    @media screen and (min-width: $tablet-width) {
+      padding-top: 14px;
+      padding-bottom: 15px;
+    }
+  }
 }
 
 .photo__like {
   padding-left: 50px;
+  padding-top: 24px;
+  color: $pink;
+  text-transform: uppercase;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    left: 19px;
-    top: 6px;
+    left: 17px;
+    bottom: 5px;
     width: 12px;
     height: 12px;
+    fill: $pink;
     background-image: url("../img/icon-heart.svg");
     background-size: cover;
+  }
+}
+
+.photo__image {
+  display: block;
+  width: 280px;
+  height: 180px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
+
+  &--panorama-image {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }

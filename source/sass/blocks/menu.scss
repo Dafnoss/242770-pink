@@ -1,24 +1,54 @@
 .menu {
-  display: flex;
-  flex-direction: column;
+  display: none;
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: center;
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+  }
+
+  &--top {
+    position: absolute;
+    top: 63px;
+    left: 0;
+    width: 100%;
+
+    @media screen and (min-width: $tablet-width) {
+      position: relative;
+      top: 0;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      top: -10px;
+    }
+  }
 }
 
 .menu__item {
-  padding-bottom: 20px;
+  box-shadow: 0 -1px 0 $black,
+    inset 0 1px 0 rgba($white, 0.15);
+  background: $blue;
+
+  @media screen and (min-width: $desktop-width) {
+    background: transparent;
+    box-shadow: none;
+    padding-left: 80px;
+  }
 }
 
 .menu__link {
+  display: block;
   font-size: 18px;
-  font-family: $base-font;
   color: $white;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   line-height: 32px;
+  padding: 16px;
 
   &:hover,
   &:focus {
@@ -27,5 +57,22 @@
 
   &:active {
     color: rgba($pink, 0.3);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+      line-height: 18px;
+      font-weight: normal;
+      text-transform: none;
+
+      &:active {
+        color: $white;
+        border-bottom: 2px solid $white;
+      }
+    }
+
+  &--current {
+    @media screen and (min-width: $desktop-width) {
+      border-bottom: 2px solid $pink;
+    }
   }
 }

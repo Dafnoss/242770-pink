@@ -1,6 +1,14 @@
 .table {
   text-align: center;
+  background-color: $white;
   color: $white;
+  width: 100%;
+  border-collapse: collapse;
+
+   @media screen and (max-width: $tablet-width) {
+    min-width: 1080px;
+    margin-left: -380px;
+   }
 }
 
 .table__title {
@@ -8,6 +16,20 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
+  padding-top: 15px;
+  padding-bottom: 23px;
+  text-transform: uppercase;
+  border: 2px solid $grey;
+
+  &--empty {
+    display: none;
+
+    @media screen and (min-width: $tablet-width) {
+      display: table-cell;
+      background-color: transparent;
+      border: none;
+    }
+  }
 }
 
 .table__cost {
@@ -15,24 +37,54 @@
   font-size: 24px;
   font-weight: lighter;
   line-height: 30px;
+  display: block;
 }
 
 .table__field {
-  color: $blue;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: left;
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: table-cell;
+    color: $black;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid $grey;
+  }
 }
 
 .table__value {
-  padding: 16px 22px;
-  font-size: 0;
-  background-repeat: no-repeat;
-  background-image: url("../img/icon-yes.svg");
-  display: flex;
-  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  border: 2px solid $grey;
+  text-align: left;
 
-  &--disabled {
-    background-image: url("../img/icon-no.svg");
+  @media screen and (min-width: $tablet-width) {
+    text-align: center;
   }
+}
+
+
+.mobile-only {
+    display: none;
+
+  @media screen and (max-width: $tablet-width) {
+    color: $black;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    min-width: 130px;
+    padding-right: 75px;
+    padding-left: 50px;
+  }
+}
+
+.table__icon-yes {
+  fill: #3dc644;
+}
+
+.table__icon-no {
+  fill: #f25b26;
 }

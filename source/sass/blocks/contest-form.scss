@@ -1,22 +1,78 @@
-.contest-form__item {
+.contest-form {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.contest-form__item {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+
+  @media screen and (min-width: $tablet-width) {
+    border: 2px solid $grey;
+  }
 
   &--achievements {
-    background-color: $grey;
+    display: block;
     padding-bottom: 20px;
-    margin-top: 30px;
+    box-sizing: border-box;
   }
 
   &--review {
     margin-top: 50px;
+    box-sizing: border-box;
+    order: 7;
+    width: 100%;
   }
-}
 
-.contest-form__subtitle {
-  padding-top: 40px;
+  &--apps {
+    order: 5;
+    box-sizing: border-box;
+
+    @media screen and (min-width: $tablet-width) {
+      order: 3;
+      padding: 20px 20px;
+      height: 290px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: 50%;
+    }
+  }
+
+  &--name {
+    order: 2;
+    border: none;
+    box-sizing: border-box;
+
+    @media screen and (min-width: $tablet-width) {
+      padding-right: 70px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+     width: 50%;
+    }
+  }
+
+  &--user-contacts {
+    order: 4;
+    border: inherit;
+    width: 100%;
+    box-sizing: border-box;
+
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border: 2px solid $grey;
+      padding: 40px 50px;
+    }
+  }
 }
 
 .contest-form__subtitle-inner {
@@ -24,6 +80,16 @@
   color: $pink;
   font-size: 14px;
   line-height: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+
+  &--mobile-hidden {
+
+    @media screen and (max-width: $mobile-width) {
+      display: none;
+    }
+  }
 }
 
 .contest-form__footer {
@@ -31,6 +97,12 @@
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  order: 8;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .contest-form__note-accent {
@@ -44,4 +116,48 @@
   color: $blue;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.contest-form__textarea {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.contest-form__radio-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__input-wrapper {
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contest-form__color-wrapper {
+  background-color: $grey;
+  width: 100%;
+  order: 3;
+
+  @media screen and (min-width: $tablet-width) {
+    order: 5;
+    margin-top: 30px;
+    background-color: transparent;
+  }
+}
+
+.contest-form__checkbox-wrapper {
+  padding: 0;
+  padding: 20px 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 40px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }

@@ -1,10 +1,20 @@
+.input {
+  display: block;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .input__label {
+  display: block;
   font-size: 14px;
   line-height: 1.7;
   color: $pink;
-  display: block;
   margin-top: 25px;
+  padding-right: 20px;
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .input__field {
@@ -12,4 +22,21 @@
   color: $blue;
   padding: 15px 15px;
   border: 2px solid #e5e5e5;
+  flex-grow: 1;
+  margin-bottom: 20px;
+
+  &:focus,
+  &:active {
+    border: 2px solid $pink;
+    outline: none;
+  }
+
+  &:hover {
+    border: 2px solid $blue;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
 }

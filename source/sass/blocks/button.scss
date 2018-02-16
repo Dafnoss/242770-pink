@@ -1,5 +1,6 @@
 .button {
-  display: inline-block;
+  display: block;
+  max-width: 280px;
   padding: 5px 40px;
   font-size: 18px;
   font-weight: bold;
@@ -11,10 +12,13 @@
   font-family: $base-font;
 
   &--download {
+    padding: 11px 35px;
     color: $white;
     border: 3px solid $white;
-    margin-top: 28px;
-    margin-bottom: 32px;
+
+      @media screen and (min-width: $tablet-width) {
+        max-width: 224px;
+      }
   }
 
   &:hover,
@@ -32,7 +36,8 @@
     min-width: 280px;
     color: $pink;
     border: 3px solid $pink;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 
     &:hover,
     &:focus {
@@ -43,6 +48,11 @@
     &:active {
       background-color: $pink;
       color: $pink--lighter;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      min-width: 183px;
+      margin-right: 20px;
     }
   }
 
@@ -87,5 +97,13 @@
       border: 3px solid rgba($blue, 0.3);
       background-color: rgba($blue, 0.3);
     }
+
+    @media screen and (min-width: $desktop-width) {
+      min-width: 183px;
+    }
+  }
+
+  &--close-modal {
+    min-width: 300px;
   }
 }

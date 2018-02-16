@@ -1,3 +1,19 @@
 .rates {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+  background-color: $grey;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-bottom: 70px;
+  }
+}
+
+.rates__toggles {
+  padding-top: 40px;
+
+  @media screen and (min-width: $tablet-width) {
+   display: none;
+  }
 }
