@@ -18,6 +18,11 @@
 .features-list__item {
   padding-top: 35px;
 
+  @media screen and (min-width: $tablet-width) {
+    text-align: left;
+    padding-top: 40px;
+  }
+
   @media screen and (min-width: $desktop-width) {
     width: 33.3%;
     margin-left: 94px;

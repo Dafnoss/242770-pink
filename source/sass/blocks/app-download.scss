@@ -6,9 +6,9 @@
   background-position: 12% 28%;
 
   @media screen and (min-width: $tablet-width) {
-    padding-top: 100px;
-    background-size: 476px 476px;
-    background-position: 94% 100%;
+    padding-top: 27px;
+    background-size: 466px 545px;
+    background-position: 179px 77px;
   }
 
    @media screen and (min-width: $desktop-width) {
@@ -29,6 +29,8 @@
     align-content: space-between;
     background-color: transparent;
     width: 360px;
+    padding-top: 17px;
+    padding-bottom: 79px;
   }
 
    @media screen and (min-width: $desktop-width) {
@@ -49,7 +51,9 @@
   padding-top: 20px;
 
   @media screen and (min-width: $tablet-width) {
-    width: 350px;
+    font-size: 18px;
+    width: 300px;
+    padding-top: 37px;
   }
 }
 
@@ -62,6 +66,8 @@
   box-sizing: border-box;
 
   @media screen and (min-width: $tablet-width) {
-    width: 350px;
+    width: 270px;
+    padding-left: 11px;
+    padding-top: 47px;
   }
 }
