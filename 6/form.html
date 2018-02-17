@@ -60,21 +60,21 @@
             <div class="main-slogan container">
                 <p class="main-slogan__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту!</p>
             </div>
-            <form class="contest-form container" method="post">
+            <form class="contest-form" method="post">
                 <fieldset class="contest-form__item contest-form__item--name">
-                    <label class="input contest-form__input">
-                        <span class="input__label">Фамилия:</span>
-                        <input class="input__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
-                    </label>
-                    <label class="input contest-form__input">
-                        <span class="input__label">Имя:</span>
-                        <input class="input__field" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
-                    </label>
-                    <label class="input contest-form__input">
-                        <span class="input__label">Отчество:</span>
-                        <input class="input__field" type="text" name="patronymic" id="patronymic" placeholder="Ну&nbsp;и&nbsp;отчество тоже">
-                    </label>
-                </fieldset>
+                  <label class="input contest-form__input">
+                      <span class="input__label">Фамилия:</span>
+                      <input class="input__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+                  </label>
+                  <label class="input contest-form__input">
+                      <span class="input__label">Имя:</span>
+                      <input class="input__field" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+                  </label>
+                  <label class="input contest-form__input">
+                      <span class="input__label">Отчество:</span>
+                      <input class="input__field" type="text" name="patronymic" id="patronymic" placeholder="Ну&nbsp;и&nbsp;отчество тоже">
+                  </label>
+                </div>
                 <fieldset class="contest-form__item contest-form__item--apps">
                     <legend class="contest-form__subtitle-inner">С&nbsp;каким приложением путешествовали?</legend>
                     <div class="contest-form__radio-wrapper">
@@ -126,11 +126,11 @@
                 <fieldset class="contest-form__item contest-form__item--user-contacts container">
                     <legend class="contest-form__subtitle-inner contest-form__subtitle-inner--mobile-hidden">Контактная информация</legend>
                     <div class="contest-form__input-wrapper">
-                      <label class="input contest-form__input">
+                      <label class="input contest-form__input contest-form__input--contacts">
                           <span class="input__label">Номер телефона</span>
                           <input class="input__field input__field--telephone" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
                       </label>
-                      <label class="input contest-form__input">
+                      <label class="input contest-form__input contest-form__input--contacts">
                           <span class="input__label">Адрес почты</span>
                           <input class="input__field input__field--email" type="email" name="email" id="email" placeholder="Введите почту *" required>
                       </label>
